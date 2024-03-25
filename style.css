@@ -1,0 +1,196 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lilita+One&family=Madimi+One&family=Paytone+One&display=swap');
+@import url('https://example.com/multicolore.css');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Lilita+One&family=Madimi+One&family=Paytone+One&display=swap');
+
+body {
+    background-color: rgb(166, 196, 32);
+    /* background: linear-gradient(45deg, #A6C420, #008100); */
+}
+
+/* Additional CSS for the container */
+.container {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Style for the image */
+.i1 {
+    margin-top: 10rem;
+    width: 20rem;
+    height: 20rem;
+    transform: translate(0, 0) rotate(0deg) scale(1, 1);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    left: 1.2%;
+}
+
+/* Style for the first paragraph */
+.t1 {
+    position: absolute;
+    top: 18rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Paytone One", sans-serif;
+    font-size: 3rem;
+    color: rgb(239, 239, 239);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.t1 span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-1.5em);
+    /* بداية الحرف بالأعلى */
+    animation: reveal 0.5s forwards;
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* انتهاء الحرف بالأسفل */
+    }
+}
+
+.t1 span:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.t1 span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.t1 span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.t1 span:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.t1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.t1 span:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.t1 span:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.t1 span:nth-child(8) {
+    animation-delay: 1.6s;
+}
+
+
+/* Style for the second paragraph */
+.t2 {
+    position: absolute;
+    top: 25rem;
+    left: 50.5%;
+    transform: translateX(-50%);
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.36em;
+    z-index: 2;
+    font-size: 1rem;
+    line-height: normal;
+    white-space: nowrap;
+    color: rgb(239, 239, 239);
+    text-transform: uppercase;
+    overflow: hidden; 
+    border-right: 2px solid; 
+    animation: typing 10s steps(18) infinite; 
+}
+
+@keyframes typing {
+    from, to {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+}
+
+
+/* .t2 {
+    position: absolute;
+    top: 26rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.36em;
+    z-index: 2;
+    font-size: 1rem;
+    line-height: normal;
+    white-space: nowrap;
+    color: rgb(239, 239, 239);
+    text-transform: uppercase;
+    overflow: hidden;
+    opacity: 0;
+}
+
+@keyframes drawLetter {
+    from {
+        width: 0;
+        stroke-dashoffset: 20;
+    }
+
+    to {
+        width: auto;
+        stroke-dashoffset: 0;
+    }
+}
+
+.t2 span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-timing-function: linear;
+    stroke: white;
+    stroke-width: 1px;
+    width: 0;
+    opacity: 1;
+    animation: drawLetter 1.5s forwards;
+} */
+
+
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .i1 {
+        width: 18rem;
+        height: 18rem;
+        margin-left: auto;
+        margin-right: auto;
+        left: 2.7%;
+        /* Adjust this value as needed */
+        position: relative;
+        /* Add this line to make left property work */
+        display: block;
+        margin-top: 10rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .t1 {
+        top: 17rem;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .t2 {
+        top: 23rem;
+        text-align: center;
+        font-size: 0.88rem;
+    }
+}
