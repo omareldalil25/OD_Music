@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./artist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+<body>
+    
+    <!-- Mobile Navbar -->
+    <div class="mobile-nav">
+        <div class="logo">
+            <img src="./logo 4.svg" alt="Your Music App Logo">
+        </div>
+    </div>
+
+    <!-- Computer Navbar -->    
+    <div class="navbar">
+        <div class="logo">
+            <img src="./logo 4.svg" alt="Your Music App Logo">
+        </div>
+        <div class="nav-links">
+            <a href="../Home/home.html"><span class="material-symbols-outlined">home</span> &nbsp;Home</a>
+            <a href="../Artists/artist.html"><span class="material-symbols-outlined">artist</span> &nbsp;Artists</a>
+            <a href="#"><span class="material-symbols-outlined">format_list_bulleted</span> &nbsp;Playlists</a>
+            <a href="#"><span class="material-symbols-outlined">favorite</span> &nbsp;Favorites</a>
+        </div>
+        <div class="search-box">
+            <span class="search-icon">
+                <span class="material-symbols-outlined" style="color: black;font-weight: 500;">search</span>
+            </span> 
+            <input type="text" class="search-input" placeholder="  Search...">
+        </div>
+        <div class="user-dropdown" onmouseleave="closeDropdown()">
+            <span class="user-icon" onclick="toggleDropdown()">
+                <span class="material-symbols-outlined" style="font-size: 30px;">account_circle</span>
+            </span>      
+            <div class="dropdown-content" id="userDropdown">
+                <a href="#">Upgrade to Premium <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#"><i class="fa-sharp fa-solid fa-gear"></i> Settings</a>                 
+                <hr>
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> LogOut</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- cards -->
+    <div class="card-container">
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Amr Diab.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="../Profiles Artists/Amr Diab/amr_diab.html">Amr Diab</a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/tamer hosny.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="tamer_hosny.html"> Tamer Hosny </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/tamer Ashour.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="tamer_ashour.html"> Tamer Ashour </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Bahaa Sultan.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="bahaa_sultan.html"> Bahaa Sultan </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Ahmed Saad.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="ahmed_saad.html"> Ahmed Saad </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Mohammed Ramadan.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="mohammed_rmadan.html"> Mohammed Ramadan </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Ramy Sabry.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="ramy_sabry.html"> Ramy Sabry </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Mohamed Hamaki.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="mohamed_hamaki.html"> Mohamed Hamaki </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Mahmoud El Esseily.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="mahmoud_elesseily.html"> Mahmoud<br> El-Esseily </a></h2>
+        </div>
+
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Nabil.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="nabil.html"> Nabil </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Wael Jassar.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="wael_jassar.html"> Wael Jassar </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Mohammed mounir.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="mohammed_mounir.html"> Mohammed Mounir </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Ahmed Farid.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="ahmed_farid.html"> Ahmed Farid </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Ramy Gamal.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="ramy_gamal.html"> Ramy Gamal </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Mahmoud Ellithy.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="mahmoud_ellithy.html"> Mahmoud Ellithy </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/مُسلِم.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="مُسلِم.html"> Muslim - مُسلِم </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Mohamed Mohie.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="mohamed_mohie.html"> Mohamed Mohie </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Muslim.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Muslim.html"> Muslim </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Reda El-Bahrawy.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Reda_elbahrawy.html"> Reda El-Bahrawy </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Ahmed Sheba.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="ahmed_sheba.html"> Ahmed Sheba </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Ruby.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="ruby.html"> Ruby - روبي </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Houda Bondok .jpg" alt="Artist 1">
+            </div>
+            <h2><a href="houda_bondok.html"> Houda Bondok  </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Hamo Bika.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="hamo_bika.html"> حمو بيكا / Hamo Bika </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Sherine Abdel-Wahab.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="sherine_abdelwahab.html"> Sherine <br> Abdel-Wahab </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Angham.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="angham.html"> Angham </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Mohamed Fouad.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="mohamed_fouad.html"> Mohamed Fouad </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Hussain AlJassmi.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Hussain_AlJassmi.html"> Hussain AlJassmi - حسين الجسمي </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Amr Mostafa.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Amr_Mostafa.html"> Amr Mostafa </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Nedaa Sharara.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Nedaa_Sharara.html"> Nedaa Sharara - نداء شرارة </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Mohamed El Sharnouby.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Mohamed_ElSharnouby.html"> Mohamed El Sharnouby  (محمد الشرنوبي) </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Mohammed Saeed.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Mohammed_Saeed.html"> Mohammed Saeed </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Ahmed Gamal.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Ahmed_Gamal.html"> Ahmed Gamal </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Amer Mounib .jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Amer_Mounib.html"> Amer Mounib  </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/om kolthom.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="om_kolthom.html"> om kolthom </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/abdelhalimhafez.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="abdelhalimhafez.html"> Abdelhalim Hafez </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Elissa.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Elissa.html"> Elissa </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Samo Zaen.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Samo_Zaen.html"> Samo Zaen </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Ahmed Batshan.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Ahmed_Batshan.html"> Ahmed Batshan </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Hamza Namira.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Hamza_Namira.html"> Hamza Namira </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Jannat.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Jannat.html"> Jannat </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Amir Eid.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Amir_Eid.html"> Amir Eid </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Abu.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Abu.html"> Abu - أبو </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Adham Seliman.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Adham_Seliman.html"> Adham Seliman </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Aziz Maraka.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Aziz Maraka.html"> Aziz Maraka - عزيز مرقة </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Disco Misr.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Disco_Misr.html"> Disco Misr </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Sharmoofers.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Sharmoofers.html"> Sharmoofers </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Samira Said.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Samira_Said.html"> Samira Said </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Carmen Soliman.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Carmen_Soliman.html"> Carmen Soliman </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Nancy Ajram.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Nancy_Ajram.html"> Nancy Ajram </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Hassan El Shafei.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Hassan_ElShafei.html"> Hassan El Shafei </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Cairokee .jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Cairokee.html"> Cairokee  </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Haytham Shaker.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Haytham_Shaker.html"> Haytham Shaker </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Assala.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Assala.html"> Assala </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Fadel Chaker.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Fadel_Chaker.html"> Fadel Chaker - فضل شاكر  </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Georges Wassouf.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Georges_Wassouf.html"> Georges Wassouf - جورج وسوف  </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Moustafa Hagag .jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Moustafa_Hagag.html"> Moustafa Hagag </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Mohamed Adaweya .jpeg" alt="Artist 1">
+            </div>
+            <h2><a href="Mohamed Adaweya.html"> Mohamed Adaweya </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/WAMA.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="WAMA.html"> WAMA </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Donia Samir Ghanem.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Donia_Samir_Ghanem.html"> Donia Samir Ghanem </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Ahmed Kamel.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Ahmed Kamel.html"> Ahmed Kamel </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Maha ftouni.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Maha ftouni.html"> Maha ftouni </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Karim Mohsen.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Karim Mohsen.html"> Karim Mohsen </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Zap Tharwat.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Zap Tharwat.html"> Zap Tharwat </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Hakim.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Hakim.html"> Hakim </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Haifa Wehbe.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Haifa Wehbe.html"> Haifa Wehbe </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Essam Sasa.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Essam Sasa.html"> عصام صاصا - Essam Sasa </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Marwan Moussa.jpeg" alt="Artist 1">
+            </div>
+            <h2><a href="Marwan Moussa.html"> Marwan Moussa </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Nawal.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Nawal.html"> نوال عبدالشافي - Nawal Abdelchaffi </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Hana Yousry.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Hana Yousry.html"> Hana Yousry </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Wegz.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Wegz.html"> Wegz </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Hossam Habib.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Hossam Habib.html"> Hossam Habib </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Mohamed Nour.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Mohamed Nour.html"> Mohamed Nour </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Abd El Fattah Grini.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Abd El Fattah Grini.html"> Abd El Fattah Grini </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Khaled.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Khaled.html"> Khaled - الشاب خالد </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Medhat Saleh.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Medhat Saleh.html"> Medhat Saleh - مدحت صالح </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Ali-Elhaggar.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Ali-Elhaggar.html"> علي الحجار |<br> Ali-Elhaggar </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Akram Hosny.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Akram Hosny.html"> Akram Hosny </a></h2>
+        </div>
+ 
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Diab.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Diab.html"> Diab </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Omar Kamal.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Omar Kamal.html"> Omar Kamal - عمر كمال </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Hassan Shakosh.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Hassan Shakosh.html"> حسن شاكوش - Hassan Shakosh </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/3enba.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="3enba.html"> مصطفى عنبه - Mostafa 3enba </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Bosy .jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Bosy .html"> Bosy  </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Tarek El Sheikh.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Tarek El Sheikh.html"> Tarek El Sheikh - طارق الشيخ </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/AbdelBasset Hamouda.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="AbdelBasset Hamouda.html"> AbdelBasset Hamouda </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Hany Shaker.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Hany Shaker.html"> Hany Shaker </a></h2>
+        </div>
+        
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Ragheb Alama.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Ragheb Alama.html"> Ragheb Alama </a></h2>
+        </div>
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Faia Younan.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Faia Younan.html"> Faia Younan - فايا يونان </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Sia.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Sia.html"> Sia </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Adele.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Adele.html"> Adele </a></h2>
+        </div>
+ 
+
+        <div class="glassy-card">
+            <div class="circle-image">
+                <img src="./pictures/Ed Sheeran.jpg" alt="Artist 1">
+            </div>
+            <h2><a href="Ed Sheeran.html"> Ed Sheeran </a></h2>
+        </div>
+ 
+    </div>
+
+
+    <!-- artists mobile -->    
+    <div class="mobile-artists">
+        <div class="artist-row">
+
+            <div class="artist">
+                <a href="../Profiles Artists/Amr Diab/amr_diab.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Amr Diab.jpg" alt="Artist 1">
+                    </div>
+                    <p class="artist-name" href="../Profiles Artists/Amr Diab/amr_diab.html">Amr Diab</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist2.html">
+                    <div class="circle-image">
+                        <img src="./pictures/tamer hosny.jpg" alt="Artist 2">
+                    </div>
+                    <p class="artist-name">Tamer Hosny</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/tamer Ashour.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Tamer Ashour</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Bahaa Sultan.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Bahaa Sultan</p>
+                </a>
+            </div>
+            
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Ahmed Saad.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Ahmed Saad</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Mohammed Ramadan.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Mohammed Ramadan</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Ramy Sabry.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Ramy Sabry</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Mohamed Hamaki.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Mohamed Hamaki</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Mahmoud El Esseily.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Mahmoud El-Esseily</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Nabil.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Nabil</p>
+                </a>
+            </div>
+            
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Wael Jassar.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Wael Jassar</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Mohammed mounir.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Mohammed Mounir</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Ahmed Farid.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Ahmed Farid</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Ramy Gamal.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Ramy Gamal</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Mahmoud Ellithy.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Mahmoud Ellithy</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/مُسلِم.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Muslim - مُسلِم</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Mohamed Mohie.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Mohamed Mohie</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Muslim.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Muslim</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Reda El-Bahrawy.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Reda El-Bahrawy</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Ahmed Sheba.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Ahmed Sheba</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Ruby.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Ruby - روبي</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Houda Bondok .jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Houda Bondok</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Hamo Bika.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">حمو بيكا / Hamo Bika</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Sherine Abdel-Wahab.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Sherine Abdel-Wahab</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Angham.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Angham</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Mohamed Fouad.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Mohamed Fouad</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Hussain AlJassmi.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Hussain AlJassmi - حسين الجسمي</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Amr Mostafa.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Amr Mostafa</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Nedaa Sharara.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Nedaa Sharara - نداء شرارة</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Mohamed El Sharnouby.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Mohamed El Sharnouby (محمد الشرنوبي)</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Mohammed Saeed.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Mohammed Saeed</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Ahmed Gamal.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Ahmed Gamal</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Amer Mounib .jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Amer Mounib</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/om kolthom.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Om Kolthom</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/abdelhalimhafez.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Abdelhalim Hafez</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Elissa.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Elissa</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Samo Zaen.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Samo Zaen</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Ahmed Batshan.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Ahmed Batshan</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Hamza Namira.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Hamza Namira</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Jannat.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Jannat</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Amir Eid.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Amir Eid</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Abu.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Abu - أبو</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Adham Seliman.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Adham Seliman</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Aziz Maraka.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Aziz Maraka - عزيز مرقة</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Disco Misr.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Disco Misr</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Sharmoofers.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Sharmoofers</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Samira Said.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Samira Said</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Carmen Soliman.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Carmen Soliman</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Nancy Ajram.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Nancy Ajram</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Hassan El Shafei.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Hassan El Shafei</p>
+                </a>
+            </div>
+            
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Cairokee .jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Cairokee</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Haytham Shaker.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Haytham Shaker</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Assala.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Assala</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Fadel Chaker.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Fadel Chaker - فضل شاكر</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Georges Wassouf.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Georges Wassouf - جورج وسوف</p>
+                </a>
+            </div>
+            
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Moustafa Hagag .jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Moustafa Hagag</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Mohamed Adaweya .jpeg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Mohamed Adaweya</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/WAMA.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">WAMA</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Donia Samir Ghanem.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Donia Samir Ghanem</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Ahmed Kamel.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Ahmed Kamel</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Maha ftouni.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Maha ftouni</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Karim Mohsen.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Karim Mohsen</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Zap Tharwat.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Zap Tharwat</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Hakim.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Hakim</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Haifa Wehbe.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Haifa Wehbe</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Essam Sasa.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">عصام صاصا - Essam Sasa</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Marwan Moussa.jpeg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Marwan Moussa</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Nawal.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">نوال عبدالشافي - Nawal Abdelchaffi</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Hana Yousry.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Hana Yousry</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Wegz.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Wegz</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Hossam Habib.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Hossam Habib</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Mohamed Nour.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Mohamed Nour</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Abd El Fattah Grini.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Abd El Fattah Grini</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Khaled.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Khaled - الشاب خالد</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Medhat Saleh.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Medhat Saleh - مدحت صالح</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Ali-Elhaggar.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">علي الحجار | Ali-Elhaggar</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Akram Hosny.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Akram Hosny</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Diab.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Diab</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Omar Kamal.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Omar Kamal - عمر كمال</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Hassan Shakosh.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">حسن شاكوش - Hassan Shakosh</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/3enba.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">مصطفى عنبه - Mostafa 3enba</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Bosy .jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Bosy</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Tarek El Sheikh.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Tarek El Sheikh - طارق الشيخ</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/AbdelBasset Hamouda.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">AbdelBasset Hamouda</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Hany Shaker.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Hany Shaker</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Ragheb Alama.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Ragheb Alama</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Faia Younan.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Faia Younan - فايا يونان</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Sia.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Sia</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Adele.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Adele</p>
+                </a>
+            </div>
+
+            <div class="artist">
+                <a href="artist3.html">
+                    <div class="circle-image">
+                        <img src="./pictures/Ed Sheeran.jpg" alt="Artist 3">
+                    </div>
+                    <p class="artist-name">Ed Sheeran</p>
+                </a>
+            </div>
+
+
+        </div>
+        <!-- يمكنك تكرار الفنانين الآخرين هنا -->
+    </div>
+
+    <!-- Mobile Footer -->
+    <footer class="mobile-footer">
+        <a href="../Home/home.html"><span class="material-symbols-outlined">home</span></a>
+        <a href="../Artists/artist.html"><span class="material-symbols-outlined">artist</span></a>
+        <a href="#"><span class="material-symbols-outlined">format_list_bulleted</span></a>
+        <a href="#"><span class="material-symbols-outlined">favorite</span></a>
+        <!-- <a href="#"><span class="material-symbols-outlined">search</span></a> -->
+        <a href="#"><span class="material-symbols-outlined">account_circle</span></a>
+    </footer>
+
+    
+
+    <script src="./artist.js"></script>
+    <script src="https://kit.fontawesome.com/e2bb4f45c2.js" crossorigin="anonymous"></script>
+</body>
+</html>
