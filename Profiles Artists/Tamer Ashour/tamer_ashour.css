@@ -1,0 +1,877 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, #A6C420, #008100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8.7vh;
+    max-width: 1500px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .mobile-footer a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .content {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 601px) {
+    footer {
+        display: none;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 93vh;
+    width: 80px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* توزيع العناصر بينها */
+    align-items: center;
+    padding-top: 50px;
+    border-radius: 10px;
+}
+
+.links {
+    position: relative;
+    bottom: 280px;
+}
+
+.logo img {
+    width: 390px;
+    /* تحديد العرض */
+    height: auto;
+    /* تحديد الارتفاع بناءً على العرض المحدد */
+    position: relative;
+    bottom: 150px;
+    left: 18.5px;
+}
+
+.links,
+.settings-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links a,
+.settings-icon,
+.user-icon {
+    margin-bottom: 40px;
+    /* مسافة بين العناصر */
+}
+
+.links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.links a:hover {
+    color: #555;
+}
+
+.divider {
+    width: 100%;
+    border: none;
+    position: relative;
+    bottom: 280px;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    /* خط فاصل */
+}
+
+.settings-icon,
+.user-icon {
+    position: relative;
+    bottom: 240px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+        /* إخفاء الشريط الجانبي عند عرض الشاشة بأقل من 600 بكسل */
+    }
+}
+
+
+header {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    top: 79px;
+    left: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 1330px;
+    margin: 0 auto;
+    /* يوسط الهيدر أفقيًا */
+    border-radius: 10px;
+    /* يجعل حواف الهيدر دائرية */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* يضيف ظل للهيدر */
+}
+
+
+.artist-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist-info img {
+    width: 170px;
+    /* تعديل حجم الصورة وفقًا للحاجة */
+    height: 170px;
+    border-radius: 50%;
+    /* تقويس الصورة لتكون دائرية */
+    margin-right: 5px;
+    /* تباعد بين الصورة والنصوص */
+    position: relative;
+    right: 300px;
+    top: 15px;
+}
+
+.verified {
+    color: #fff;
+    /* لون العلامة الموثقة */
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 20px;
+    right: 280px;
+}
+
+.artist-details h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    right: 410px;
+    top: 30px;
+    color: #fff;
+
+}
+
+.artist-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    right: 480px;
+    top: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header1 {
+        display: none;
+    }
+
+    .container {
+        display: none;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+
+.playlist {
+    border-radius: 10px;
+    /* يجعل حواف الهيدر دائرية */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* يضيف ظل للهيدر */
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 1000px;
+}
+
+.singles {
+    border-radius: 10px;
+    /* يجعل حواف الهيدر دائرية */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* يضيف ظل للهيدر */
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 1000px;
+}
+
+.playlist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.playlist-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 2px;
+    /* يجعل حواف الهيدر دائرية */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* يضيف ظل للهيدر */
+}
+
+/* تنسيق الشريط السفلي في الفوتر */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 85px;
+    width: 92%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    /* يجعل حواف الهيدر دائرية */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* يضيف ظل للهيدر */
+}
+
+.footer-content img {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    position: relative;
+    top: 8px;
+    left: 20px;
+}
+
+/* @media only screen and (max-width: 600px) {
+    .footer-content {
+        display: none;
+    }
+} */
+
+/* أزرار القائمة */
+.controls {
+    position: absolute;
+    left: 22.8%;
+    top: 25%;
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+    transition: transform 0.3s ease;
+    position: relative;
+    left: 240%;
+    margin-bottom: 20%;
+}
+
+.controls button:hover {
+    transform: scale(1.2);
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+    transition: transform 0.3s ease;
+    position: relative;
+    left: 340px;
+    bottom: 8px;
+}
+
+.controls button:hover {
+    transform: scale(1.2);
+}
+
+/* أزرار التشغيل والتوقف */
+/* تخصيص أزرار التشغيل */
+.play-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 850px;
+}
+
+.play-btn .material-icons {
+    font-size: 33px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.play-btn:hover .material-icons {
+    color: #ff4500;
+    /* تغيير اللون عند التحويم */
+}
+
+/* تخصيص أزرار المشاركة */
+.share-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 910px;
+}
+
+.share-btn .material-icons {
+    font-size: 32px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.share-btn:hover .material-icons {
+    color: #00f;
+    /* تغيير اللون عند التحويم */
+}
+
+/* شريط التقدم للأغنية */
+.progress-bar {
+    width: 50%;
+    height: 5px;
+    background-color: #ddd;
+    position: absolute;
+    right: 25%;
+    top: 60%;
+}
+
+/* تكملة تنسيق شريط التقدم للأغنية */
+.progress-bar .current-progress {
+    height: 100%;
+    background-color: #ff4500;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.volume-bar {
+    width: 60px;
+    /* طول شريط التحكم */
+    height: 5px;
+    /* ارتفاع شريط التحكم */
+    background-color: #ddd;
+    position: absolute;
+    right: 12%;
+    top: 60%;
+}
+
+/* تنسيق أيقونة الصوت */
+.volume-bar .material-icons {
+    font-size: 22px;
+    /* حجم الأيقونة */
+    color: #fff;
+    /* لون الأيقونة */
+    margin-right: 5px;
+    /* تباعد بين الأيقونة وشريط التحكم في مستوى الصوت */
+    position: relative;
+    right: 50px;
+    bottom: 8px;
+}
+
+.volume-bar .current-volume {
+    height: 100%;
+    background-color: #ff4500;
+    /* لون الشريط عند التحكم */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* أيقونات الشريط */
+.footer-content .controls button i {
+    color: #fff;
+}
+
+
+/* تنسيق الألبومات */
+.albums {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    right: 80px;
+
+}
+
+.albums a {
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    /* يجعل حواف الهيدر دائرية */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* يضيف ظل للهيدر */
+    padding: 15px;
+}
+
+.albums img {
+    width: 160px;
+    height: 160px;
+    border-radius: 5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Imbue:opsz,wght@10..100,100..900&display=swap');
+
+.albums span {
+    display: block;
+    margin-top: 5px;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kaushan+Script&family=Lilita+One&family=Madimi+One&family=Patua+One&display=swap');
+
+.c1 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.c2 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.c3 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.S1 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+/* تنسيق الهيدر للموبايل */
+.header-mobile {
+    display: none;
+}
+
+/* تحسينات على الهيدر لتحسين التنسيق على الهواتف المحمولة */
+@media only screen and (max-width: 600px) {
+    .header1 {
+        display: none;
+    }
+
+    .header-mobile {
+        /* margin-top: 75px; */
+        max-width: 87%;
+        max-height: 200%;
+        height: 150%;
+        display: block;
+        text-align: center;
+        padding: 18px;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        position: relative;
+        top: 36px;
+        left: 2px;
+    }
+
+    .artist-info-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artist-info-mobile img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        /* تحسين التباعد بين الصورة والنص */
+        position: relative;
+        right: 95px;
+        top: 6px;
+    }
+
+    .verified {
+        color: #e74d3c;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        /* تقليل التباعد بين العلامة الموثقة والعناصر الأخرى */
+        position: relative;
+        left: 25px;
+        bottom: 75px;
+        width: 50%;
+    }
+
+    .artist-details {
+        text-align: center;
+    }
+
+    .artist-details h1 {
+        font-size: 20px;
+        margin: 5px 0;
+        position: relative;
+        left: 30px;
+        top: -82px;
+        width: 100%;
+    }
+
+    .artist-details p {
+        font-size: 12px;
+        margin: 5px 0;
+        position: relative;
+        left: 40px;
+        top: -85px;
+        width: 100%;
+    }
+}
+
+.container-mobile {
+    display: none;
+}
+
+/* CSS for mobile view */
+@media only screen and (max-width: 600px) {
+    .container {
+        display: none;
+    }
+
+    .container-mobile {
+        display: block;
+        padding: 10px;
+        position: absolute;
+        top: 130px;
+    }
+
+    /* Styles for All Time Hits */
+    .playlist-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .playlist-mobile {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        /* يجعل حواف الهيدر دائرية */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* يضيف ظل للهيدر */
+        width: 95%;
+        position: relative;
+        top: 60px;
+        left: 10px;
+    }
+
+    .playlist-item {
+        width: 50%;
+        margin-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        /* إضافة لضمان عدم ظهور أي تداخل بين العناصر */
+    }
+
+    .playlist-item img {
+        width: 28%;
+        border-radius: 5px;
+    }
+
+    .playlist-item span {
+        display: block;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        overflow: hidden;
+        /* إضافة لضمان عدم ظهور أي تداخل بين العناصر */
+        text-overflow: ellipsis;
+        /* إضافة لقص النص إذا تجاوز الحاوية */
+        white-space: nowrap;
+        /* إضافة لمنع النص من الانطباع إلى سطور جديدة */
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kaushan+Script&family=Lilita+One&family=Madimi+One&family=Patua+One&display=swap');
+
+    .c1 {
+        font-family: "Madimi One", sans-serif;
+        font-weight: bold;
+        color: #fff;
+        position: absolute;
+        left: 25px;
+    }
+
+    .S1 {
+        font-family: "Madimi One", sans-serif;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .play-btn,
+    .share-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        z-index: 1;
+    }
+
+    .play-btn {
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .share-btn {
+        color: #fff;
+        font-size: 24px;
+        top: 85%;
+    }
+
+    /* Styles for Albums */
+
+    .album-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        position: relative;
+        top: 640px;
+        padding: 3px;
+    }
+
+    .album-container {
+        width: calc(33.33% - 10px);
+        /* 33.33% لثلاث بطاقات بجانب بعضها و -10px للتعويض عن التباعد */
+        margin-bottom: 20px;
+        /* تباعد بين البطاقات */
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding-bottom: 5px;
+    }
+
+    .album-content img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        /* تقويس الحواف العلوية فقط */
+    }
+
+    .album-content {
+        text-decoration: none;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Imbue:opsz,wght@10..100,100..900&display=swap');
+
+    .album-content span {
+        display: block;
+        text-align: center;
+        margin-top: 2px;
+        font-family: "Edu NSW ACT Foundation", cursive;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        color: #fff;
+    }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kaushan+Script&family=Lilita+One&family=Madimi+One&family=Patua+One&display=swap');
+
+    .c3 {
+        font-family: "Madimi One", sans-serif;
+        font-weight: bold;
+        color: #fff;
+        position: absolute;
+        left: 25px;
+        top: 1000px;
+    }
+
+    /* Styles for Singles */
+    .singles-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: absolute;
+        left: 20px;
+        top: 570px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        /* يجعل حواف الهيدر دائرية */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* يضيف ظل للهيدر */
+        width: 90.5%;
+    }
+
+    .singles .playlist-item {
+        width: 48%;
+        margin-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+        /* إضافة لضمان عدم ظهور أي تداخل بين العناصر */
+    }
+
+    .singles .playlist-item img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .singles .playlist-item span {
+        display: block;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        overflow: hidden;
+        /* إضافة لضمان عدم ظهور أي تداخل بين العناصر */
+        text-overflow: ellipsis;
+        /* إضافة لقص النص إذا تجاوز الحاوية */
+        white-space: nowrap;
+        /* إضافة لمنع النص من الانطباع إلى سطور جديدة */
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kaushan+Script&family=Lilita+One&family=Madimi+One&family=Patua+One&display=swap');
+
+    .c2 {
+        font-family: "Madimi One", sans-serif;
+        font-weight: bold;
+        color: #fff;
+        position: absolute;
+        left: 25px;
+        top: 500px;
+    }
+
+    .S1 {
+        font-family: "Madimi One", sans-serif;
+        font-weight: bold;
+        color: #000;
+        display: block;
+        white-space: pre-line;
+        /* يسمح بالنص بالانقسام إلى سطور جديدة عندما يتجاوز العرض المحدد */
+        overflow: hidden;
+        max-width: 60%;
+        height: auto;
+        /* استخدام ارتفاع تلقائي للسماح بعرض جميع النص */
+    }
+
+    .footer-content {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .now-playing {
+        cursor: pointer;
+    }
+
+    .controls {
+        margin-top: 10px;
+    }
+
+    .progress-bar {
+        background-color: #ccc;
+        height: 4px;
+        width: 100%;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    .current-progress {
+        background-color: #4caf50;
+        height: 100%;
+        width: 0;
+        position: absolute;
+    }
+
+    .volume-bar {
+        margin-top: 10px;
+    }
+
+    .current-volume {
+        background-color: #4caf50;
+        height: 4px;
+        width: 50%;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .volume-bar {
+        display: none;
+    }
+    .footer-content {
+        position: fixed;
+        left: 1px;
+        bottom: 57.2px;
+        max-width: 89.7%;
+        height: 2%;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 2px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .footer-content span {
+        color: #fff;
+        font-weight: bold;
+        position: absolute;
+        bottom: 20px;
+        left: 75px;
+        display: inline-block;
+    }
+    .footer-content img{
+        position: absolute;
+        left: 20px;
+        top: 8px;
+    }
+    .progress-bar {
+        width: 35%;
+        position: absolute;
+        left: 70px;
+    }
+    .controls{
+        position: absolute;
+        left: -75px;
+        font-size: 2px;
+    }
+}
