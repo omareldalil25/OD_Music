@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamer Hosny</title>
+    <link rel="stylesheet" href="./tamer_hosny.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Sidebar Computer -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./logo 4.svg" alt="Your Music App Logo">
+        </div>
+        <div class="links">
+            <a href="../../Home/home.html"><span class="material-symbols-outlined">home</span></a>
+            <a href="../../Artists/artist.html"><span class="material-symbols-outlined">artist</span></a>
+            <a href="#"><span class="material-symbols-outlined">format_list_bulleted</span></a>
+            <a href="../../Favourites/favorite.html"><span class="material-symbols-outlined">favorite</span></a>
+        </div>
+        <hr class="divider"> <!-- خط فاصل -->
+        <div class="settings-user">
+            <div class="settings-icon">
+                <a href="#"><span class="material-symbols-outlined" style="color: #950101;">settings</span></a>
+            </div>
+            <div class="user-icon">
+                <a href="#"><span class="material-symbols-outlined" style="color: #950101;">account_circle</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Footer -->
+    <footer class="mobile-footer">
+        <a href="../../Home/home.html"><span class="material-symbols-outlined">home</span></a>
+        <a href="../../Artists/artist.html"><span class="material-symbols-outlined">artist</span></a>
+        <a href="#"><span class="material-symbols-outlined">format_list_bulleted</span></a>
+        <a href="#"><span class="material-symbols-outlined">favorite</span></a>
+        <!-- <a href="#"><span class="material-symbols-outlined">search</span></a> -->
+        <a href="#"><span class="material-symbols-outlined">account_circle</span></a>
+    </footer>
+
+    <!-- header -->
+    <header class="header1">
+        <div class="artist-info">
+            <img src="../../Artists/pictures/tamer hosny.jpg" alt="Artist Image">
+            <div class="verified">
+                <i class="fas fa-check-circle" style="color:#e74d3c;"></i> Verified Artist
+            </div>
+            <div class="artist-details">
+                <h1>Tamer Hosny</h1>
+                <p>1,308,851 monthly listeners</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- header for mobile -->
+    <header class="header-mobile">
+        <!-- تضمين المحتوى الذي تريد عرضه على الأجهزة المحمولة -->
+        <div class="artist-info-mobile">
+            <img src="../../Artists/pictures/tamer hosny.jpg" alt="Artist Image">
+            <div class="verified">
+                <i class="fas fa-check-circle" style="color:#e74d3c;"></i> Verified Artist
+            </div>
+            <div class="artist-details">
+                <h1>Tamer Hosny</h1>
+                <p>1,308,851 monthly listeners</p>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- content -->
+    <div class="container">
+
+        <!-- All Time Hits -->
+        <section>
+            <h2 class="c1">All Time Hits</h2>
+            <div class="playlist">
+
+                <div class="playlist-item" data-src="./All Time Hits/Mawahashtekish-Tamer.Hosny-MaTb3aa.Com.mp3"
+                    data-img="./All Time Hits/images/1.jpg">
+                    <img src="./All Time Hits/images/1.jpg" alt="Song 3">
+                    <span class="S1">Mawahashtekish</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/01.Law_Hakon_3aer_Leek.mp3"
+                    data-img="./All Time Hits/images/34.jpg">
+                    <img src="./All Time Hits/images/34.jpg" alt="Song 1">
+                    <span class="S1">Law Hakon 3aer Leek</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Bood Mokat.mp3"
+                    data-img="./All Time Hits/images/3.jpg">
+                    <img src="./All Time Hits/images/3.jpg" alt="Song 2">
+                    <span class="S1">Bood Mokat</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Ha2olk Kelma.mp3"
+                    data-img="./All Time Hits/images/30.jpg">
+                    <img src="./All Time Hits/images/30.jpg" alt="Song 3">
+                    <span class="S1">Ha2olk Kelma</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Saaba.mp3"
+                    data-img="./All Time Hits/images/11.jpg">
+                    <img src="./All Time Hits/images/11.jpg" alt="Song 3">
+                    <span class="S1">Saaba</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Helm Seneen.mp3"
+                    data-img="./All Time Hits/images/31.jpg">
+                    <img src="./All Time Hits/images/31.jpg" alt="Song 3">
+                    <span class="S1">Helm Seneen</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/07.Ergaaly.mp3"
+                    data-img="./All Time Hits/images/32.jpg">
+                    <img src="./All Time Hits/images/32.jpg" alt="Song 3">
+                    <span class="S1">Ergaaly</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Awelny Kalam.mp3"
+                    data-img="./All Time Hits/images/10.jpg">
+                    <img src="./All Time Hits/images/10.jpg" alt="Song 3">
+                    <span class="S1">Awelny Kalam</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Hadal3ny-Tamer.Hosny-MaTb3aa.Com.mp3"
+                    data-img="./All Time Hits/images/26.jpg">
+                    <img src="./All Time Hits/images/26.jpg" alt="Song 3">
+                    <span class="S1">Hadal3ny</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Ekhtraa.mp3"
+                    data-img="./All Time Hits/images/13.jpg">
+                    <img src="./All Time Hits/images/13.jpg" alt="Song 3">
+                    <span class="S1">Ekhtraa</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Habitha.YaNas-Tamer.Hosny-MaTb3aa.Com.mp3"
+                    data-img="./All Time Hits/images/25.jpg">
+                    <img src="./All Time Hits/images/25.jpg" alt="Song 3">
+                    <span class="S1">Habitha Ya Nas</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/04.180_Daraga.mp3"
+                    data-img="./All Time Hits/images/28.jpg">
+                    <img src="./All Time Hits/images/28.jpg" alt="Song 3">
+                    <span class="S1">180 Daraga</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/10.Einaya_Bet-hebak.mp3"
+                    data-img="./All Time Hits/images/33.jpg">
+                    <img src="./All Time Hits/images/33.jpg" alt="Song 3">
+                    <span class="S1">Einaya Bethebak</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Kol Haga Bena.mp3"
+                    data-img="./All Time Hits/images/30.jpg">
+                    <img src="./All Time Hits/images/30.jpg" alt="Song 3">
+                    <span class="S1">Kol Haga Bena</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <!-- يمكنك إضافة المزيد من الأغاني هنا -->
+            </div>
+        </section>
+
+        <!-- Albums -->
+        <section>
+            <h2 class="c3">Albums</h2>
+            <div class="albums">
+
+                <a href="./Albums/Hormone ElSaada/page/Hormone ElSaada.html">
+                    <img src="./Albums/Hormone ElSaada/images/cover.jpg" alt="Album 1">
+                    <span>Hormone ElSaada</span>
+                </a>
+
+                <a href="./Albums/Aِshangy/page/Aِshangy.html">
+                    <img src="./Albums/Aِshangy/images/cover.jpg" alt="Album 2">
+                    <span>Aِshangy</span>
+                </a>
+
+                <a href="./Albums/Bahabk/page/Bahabk.html">
+                    <img src="./Albums/Bahabk/images/cover.jpg" alt="Album 2">
+                    <span>Bahabk</span>
+                </a>
+
+                <a href="./Albums/Khaleek Folazy/page/Khaleek Folazy.html">
+                    <img src="./Albums/Khaleek Folazy/images/cover.jpg" alt="Album 2">
+                    <span>Khaleek Folazy</span>
+                </a>
+
+                <a href="./Albums/Eish Besho2ak/page/Eish Besho2ak.html">
+                    <img src="./Albums/Eish Besho2ak/images/cover.jpg" alt="Album 2">
+                    <span>Eish Besho2ak</span>
+                </a>
+
+                <a href="./Albums/Omry Ebtada/page/Omry Ebtada.html">
+                    <img src="./Albums/Omry Ebtada/images/cover.jpg" alt="Album 2">
+                    <span>Omry Ebtada</span>
+                </a>
+
+                <a href="./Albums/Ahwak/page/Ahwak.html">
+                    <img src="./Albums/Ahwak/images/cover.jpg" alt="Album 2">
+                    <span>Ahwak</span>
+                </a>
+
+                <a href="./Albums/180°/page/180°.html">
+                    <img src="./Albums/180°/images/cover.jpg" alt="Album 2">
+                    <span>180°</span>
+                </a>
+
+                <a href="./Albums/Bahebak Enta/page/Bahebak Enta.html">
+                    <img src="./Albums/Bahebak Enta/images/cover.jpg" alt="Album 2">
+                    <span>Bahebak Enta</span>
+                </a>
+
+                <a href="./Albums/Aghany Film Omar We Salma 3/page/Aghany Film Omar We Salma 3.html">
+                    <img src="./Albums/Aghany Film Omar We Salma 3/images/cover.jpg" alt="Album 2">
+                    <span>Aghany Film <br> Omar We Salma 3</span>
+                </a>
+
+                <a href="./Albums/Elly Gai Ahla/page/Elly Gai Ahla.html">
+                    <img src="./Albums/Elly Gai Ahla/images/cover.jpg" alt="Album 2">
+                    <span>Elly Gai Ahla</span>
+                </a>
+
+                <a href="./Albums/Ekhtart Sah/page/Ekhtart Sah.html">
+                    <img src="./Albums/Ekhtart Sah/images/cover.jpg" alt="Album 2">
+                    <span>Ekhtart Sah</span>
+                </a>
+
+                <a href="./Albums/Haeesh Hayati/page/Haeesh Hayati.html">
+                    <img src="./Albums/Haeesh Hayati/images/cover.jpg" alt="Album 2">
+                    <span>Haeesh Hayati</span>
+                </a>
+
+                <a href="./Albums/Aarrab Kaman/page/Aarrab Kaman.html">
+                    <img src="./Albums/Aarrab Kaman/images/cover.jpg" alt="Album 2">
+                    <span>Aarrab Kaman</span>
+                </a>
+
+                <a href="./Albums/El Ganna Fi Beyoutna/page/El Ganna Fi Beyoutna.html">
+                    <img src="./Albums/El Ganna Fi Beyoutna/images/cover.jpg" alt="Album 2">
+                    <span>El Ganna Fi Beyoutna</span>
+                </a>
+
+                <a href="./Albums/Ya Bent El Eh/page/Ya Bent El Eh.html">
+                    <img src="./Albums/Ya Bent El Eh/images/cover.jpg" alt="Album 2">
+                    <span>Ya Bent El Eh</span>
+                </a>
+
+                <a href="./Albums/Enaya Bethebbak/page/Enaya Bethebbak.html">
+                    <img src="./Albums/Enaya Bethebbak/images/cover.jpg" alt="Album 2">
+                    <span>Enaya Bethebbak</span>
+                </a>
+
+                <a href="./Albums/Hob/page/Hob.html">
+                    <img src="./Albums/Hob/images/cover.jpg" alt="Album 2">
+                    <span>Hob</span>
+                </a>
+
+                <a href="./Albums/Free Mix Vol. 3/page/Free Mix Vol. 3.html">
+                    <img src="./Albums/Free Mix Vol. 3/images/cover.jpg" alt="Album 2">
+                    <span>Free Mix Vol. 3</span>
+                </a>
+
+                <!-- يمكنك إضافة المزيد من الألبومات هنا -->
+            </div>
+        </section>
+
+        <!-- Singles -->
+        <section>
+            <h2 class="c2">Singles</h2>
+            <div class="singles">
+
+                <div class="playlist-item" data-src="./Singels/Adaha.mp3" data-img="./Singels/images/35.jpg">
+                    <img src="./Singels/images/35.jpg" alt="Single 1">
+                    <span class="S1">Adaha</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/02-Tag-MaTb3aa.Com.mp3"
+                    data-img="./Singels/images/2.jpg">
+                    <img src="./Singels/images/2.jpg" alt="Single 2">
+                    <span class="S1">Taj</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Helw El Makan.mp3" data-img="./Singels/images/36.jpg">
+                    <img src="./Singels/images/36.jpg" alt="Single 2">
+                    <span class="S1">Helw El Makan</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Ramadan Kareem.mp3" data-img="./Singels/images/6.jpg">
+                    <img src="./Singels/images/6.jpg" alt="Single 2">
+                    <span class="S1">Ramadan Kareem</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Aalam Gedid Ehna Awelo.mp3"
+                    data-img="./Singels/images/4.jpg">
+                    <img src="./Singels/images/4.jpg" alt="Single 2">
+                    <span class="S1">Aalam Gedid Ehna Awelo</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Farhet Gheirak.mp3" data-img="./Singels/images/5.jpg">
+                    <img src="./Singels/images/5.jpg" alt="Single 2">
+                    <span class="S1">Farhet Gheirak</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Efra7 by ZED.mp3" data-img="./Singels/images/9.jpg">
+                    <img src="./Singels/images/9.jpg" alt="Single 2">
+                    <span class="S1">Efra7 by ZED</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+
+                <div class="playlist-item" data-src="./Singels/Ya Farha.mp3" data-img="./Singels/images/12.jpg">
+                    <img src="./Singels/images/12.jpg" alt="Single 2">
+                    <span class="S1">Ya Farha</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Orange Free Max.mp3" data-img="./Singels/images/3.jpg">
+                    <img src="./Singels/images/3.jpg" alt="Single 2">
+                    <span class="S1">Orange Free Max</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Saaba.mp3" data-img="./Singels/images/11.jpg">
+                    <img src="./Singels/images/11.jpg" alt="Single 2">
+                    <span class="S1">Saaba</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Bahebak.mp3" data-img="./Singels/images/37.jpg">
+                    <img src="./Singels/images/37.jpg" alt="Single 2">
+                    <span class="S1">Bahebak</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Mesh Temsal.mp3" data-img="./Singels/images/38.jpg">
+                    <img src="./Singels/images/38.jpg" alt="Single 2">
+                    <span class="S1">Mesh Temsal</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Forsa Gedida.mp3" data-img="./Singels/images/39.jpg">
+                    <img src="./Singels/images/39.jpg" alt="Single 2">
+                    <span class="S1">Forsa Gedida</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Intro of Nasl El Aghrab Series.mp3"
+                    data-img="./Singels/images/40.jpg">
+                    <img src="./Singels/images/40.jpg" alt="Single 2">
+                    <span class="S1">Intro of Nasl El Aghrab Series</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Ghany w sama3na.mp3" data-img="./Singels/images/17.jpg">
+                    <img src="./Singels/images/17.jpg" alt="Single 2">
+                    <span class="S1">Ghany w sama3na</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Erfaa Edak.mp3" data-img="./Singels/images/22.jpg">
+                    <img src="./Singels/images/22.jpg" alt="Single 2">
+                    <span class="S1">Erfaa Edak</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Terga3lena Bel Salama.mp3"
+                    data-img="./Singels/images/41.jpg">
+                    <img src="./Singels/images/41.jpg" alt="Single 2">
+                    <span class="S1">Terga3lena Bel Salama</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/El Lahza El 7elwa.mp3"
+                    data-img="./Singels/images/42.jpg">
+                    <img src="./Singels/images/42.jpg" alt="Single 2">
+                    <span class="S1">El Lahza El 7elwa</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/El Asl Masry.mp3" data-img="./Singels/images/14.jpg">
+                    <img src="./Singels/images/14.jpg" alt="Single 2">
+                    <span class="S1">El Asl Masry</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Enta Aqwa.mp3" data-img="./Singels/images/21.jpg">
+                    <img src="./Singels/images/21.jpg" alt="Single 2">
+                    <span class="S1">Enta Aqwa</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Ehna Geel Gded.mp3" data-img="./Singels/images/15.jpg">
+                    <img src="./Singels/images/15.jpg" alt="Single 2">
+                    <span class="S1">Ehna Geel Gded</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Fark Kebir.mp3" data-img="./Singels/images/16.jpg">
+                    <img src="./Singels/images/16.jpg" alt="Single 2">
+                    <span class="S1">Fark Kebir</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Kawkab Tany Cover.mp3"
+                    data-img="./Singels/images/43.jpg">
+                    <img src="./Singels/images/43.jpg" alt="Single 2">
+                    <span class="S1">Kawkab Tany</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Nesyanak Sa3b Akeed.mp3"
+                    data-img="./Singels/images/20.jpg">
+                    <img src="./Singels/images/20.jpg" alt="Single 2">
+                    <span class="S1">Nesyanak Sa3b Akeed</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/عارفة .mp3" data-img="./Singels/images/8.jpg">
+                    <img src="./Singels/images/8.jpg" alt="Single 2">
+                    <span class="S1">عارفة</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/El-Taman.mp3" data-img="./Singels/images/44.jpg">
+                    <img src="./Singels/images/44.jpg" alt="Single 2">
+                    <span class="S1">El-Taman</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Leeh Talah Remix.mp3" data-img="./Singels/images/45.jpg">
+                    <img src="./Singels/images/45.jpg" alt="Single 2">
+                    <span class="S1">Leeh Talah Remix</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Ya_Wa7shny Live.mp3" data-img="./Singels/images/46.jpg">
+                    <img src="./Singels/images/46.jpg" alt="Single 2">
+                    <span class="S1">Ya Wa7shny Live</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Medly Tamer Hosny Romantic.mp3"
+                    data-img="./Singels/images/47.jpg">
+                    <img src="./Singels/images/47.jpg" alt="Single 2">
+                    <span class="S1">Medly Tamer Hosny Romantic</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/De7ketha Mabethazarsh.mp3"
+                    data-img="./Singels/images/48.jpg">
+                    <img src="./Singels/images/48.jpg" alt="Single 2">
+                    <span class="S1">De7ketha Mabethazarsh</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Shoofy Ba2a.mp3" data-img="./Singels/images/49.jpg">
+                    <img src="./Singels/images/49.jpg" alt="Single 2">
+                    <span class="S1">Shoofy Ba2a</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- قسم الألبومات والأغاني الفردية يمكنك إضافتها هنا -->
+    </div>
+
+    <!-- content for mobile -->
+    <div class="container-mobile">
+
+        <!-- All Time Hits -->
+        <section>
+            <h2 class="c1">All Time Hits</h2>
+            <div class="playlist-mobile">
+
+                <div class="playlist-item" data-src="./All Time Hits/Mawahashtekish-Tamer.Hosny-MaTb3aa.Com.mp3"
+                    data-img="./All Time Hits/images/1.jpg">
+                    <img src="./All Time Hits/images/1.jpg" alt="Song 3">
+                    <span class="S1">Mawahashtekish</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/01.Law_Hakon_3aer_Leek.mp3"
+                    data-img="./All Time Hits/images/34.jpg">
+                    <img src="./All Time Hits/images/34.jpg" alt="Song 1">
+                    <span class="S1">Law Hakon 3aer Leek</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Bood Mokat.mp3"
+                    data-img="./All Time Hits/images/3.jpg">
+                    <img src="./All Time Hits/images/3.jpg" alt="Song 2">
+                    <span class="S1">Bood Mokat</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Ha2olk Kelma.mp3"
+                    data-img="./All Time Hits/images/30.jpg">
+                    <img src="./All Time Hits/images/30.jpg" alt="Song 3">
+                    <span class="S1">Ha2olk Kelma</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Saaba.mp3"
+                    data-img="./All Time Hits/images/11.jpg">
+                    <img src="./All Time Hits/images/11.jpg" alt="Song 3">
+                    <span class="S1">Saaba</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Helm Seneen.mp3"
+                    data-img="./All Time Hits/images/31.jpg">
+                    <img src="./All Time Hits/images/31.jpg" alt="Song 3">
+                    <span class="S1">Helm Seneen</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/07.Ergaaly.mp3"
+                    data-img="./All Time Hits/images/32.jpg">
+                    <img src="./All Time Hits/images/32.jpg" alt="Song 3">
+                    <span class="S1">Ergaaly</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Awelny Kalam.mp3"
+                    data-img="./All Time Hits/images/10.jpg">
+                    <img src="./All Time Hits/images/10.jpg" alt="Song 3">
+                    <span class="S1">Awelny Kalam</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Hadal3ny-Tamer.Hosny-MaTb3aa.Com.mp3"
+                    data-img="./All Time Hits/images/26.jpg">
+                    <img src="./All Time Hits/images/26.jpg" alt="Song 3">
+                    <span class="S1">Hadal3ny</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Ekhtraa.mp3"
+                    data-img="./All Time Hits/images/13.jpg">
+                    <img src="./All Time Hits/images/13.jpg" alt="Song 3">
+                    <span class="S1">Ekhtraa</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Habitha.YaNas-Tamer.Hosny-MaTb3aa.Com.mp3"
+                    data-img="./All Time Hits/images/25.jpg">
+                    <img src="./All Time Hits/images/25.jpg" alt="Song 3">
+                    <span class="S1">Habitha Ya Nas</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/04.180_Daraga.mp3"
+                    data-img="./All Time Hits/images/28.jpg">
+                    <img src="./All Time Hits/images/28.jpg" alt="Song 3">
+                    <span class="S1">180 Daraga</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/10.Einaya_Bet-hebak.mp3"
+                    data-img="./All Time Hits/images/33.jpg">
+                    <img src="./All Time Hits/images/33.jpg" alt="Song 3">
+                    <span class="S1">Einaya Bethebak</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./All Time Hits/Kol Haga Bena.mp3"
+                    data-img="./All Time Hits/images/30.jpg">
+                    <img src="./All Time Hits/images/30.jpg" alt="Song 3">
+                    <span class="S1">Kol Haga Bena</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+                <!-- You can add more songs here -->
+            </div>
+        </section>
+
+        <!-- Albums -->
+        <section>
+            <h2 class="c3">Albums</h2>
+            <div class="albums-mobile">
+                <div class="album-row">
+
+                    <!-- Album 1 -->
+                    <div class="album-container">
+                        <a href="./Albums/Hormone ElSaada/page/Hormone ElSaada.html" class="album-content">
+                            <img src="./Albums/Hormone ElSaada/images/cover.jpg" alt="Album 1">
+                            <span>Hormone ElSaada</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 2 -->
+                    <div class="album-container">
+                        <a href="./Albums/Aِshangy/page/Aِshangy.html" class="album-content">
+                            <img src="./Albums/Aِshangy/images/cover.jpg" alt="Album 2">
+                            <span>Aِshangy</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 3 -->
+                    <div class="album-container">
+                        <a href="./Albums/Bahabk/page/Bahabk.html" class="album-content">
+                            <img src="./Albums/Bahabk/images/cover.jpg" alt="Album 3">
+                            <span>Bahabk</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 4 -->
+                    <div class="album-container">
+                        <a href="./Albums/Khaleek Folazy/page/Khaleek Folazy.html" class="album-content">
+                            <img src="./Albums/Khaleek Folazy/images/cover.jpg" alt="Album 4">
+                            <span>Khaleek Folazy</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 5 -->
+                    <div class="album-container">
+                        <a href="./Albums/Eish Besho2ak/page/Eish Besho2ak.html" class="album-content">
+                            <img src="./Albums/Eish Besho2ak/images/cover.jpg" alt="Album 5">
+                            <span>Eish Besho2ak</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 6 -->
+                    <div class="album-container">
+                        <a href="./Albums/Omry Ebtada/page/Omry Ebtada.html" class="album-content">
+                            <img src="./Albums/Omry Ebtada/images/cover.jpg" alt="Album 6">
+                            <span>Omry Ebtada</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 7 -->
+                    <div class="album-container">
+                        <a href="./Albums/Ahwak/page/Ahwak.html" class="album-content">
+                            <img src="./Albums/Ahwak/images/cover.jpg" alt="Album 7">
+                            <span>Ahwak</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 8 -->
+                    <div class="album-container">
+                        <a href="./Albums/180°/page/180°.html" class="album-content">
+                            <img src="./Albums/180°/images/cover.jpg" alt="Album 8">
+                            <span>180°</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 9 -->
+                    <div class="album-container">
+                        <a href="./Albums/Bahebak Enta/page/Bahebak Enta.html" class="album-content">
+                            <img src="./Albums/Bahebak Enta/images/cover.jpg" alt="Album 9">
+                            <span>Bahebak Enta</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 10 -->
+                    <div class="album-container">
+                        <a href="./Albums/Aghany Film Omar We Salma 3/page/Aghany Film Omar We Salma 3.html"
+                            class="album-content">
+                            <img src="./Albums/Aghany Film Omar We Salma 3/images/cover.jpg" alt="Album 10">
+                            <span>Aghany Film Omar We Salma 3</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 11 -->
+                    <div class="album-container">
+                        <a href="./Albums/Elly Gai Ahla/page/Elly Gai Ahla.html" class="album-content">
+                            <img src="./Albums/Elly Gai Ahla/images/cover.jpg" alt="Album 11">
+                            <span>Elly Gai Ahla</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 12 -->
+                    <div class="album-container">
+                        <a href="./Albums/Ekhtart Sah/page/Ekhtart Sah.html" class="album-content">
+                            <img src="./Albums/Ekhtart Sah/images/cover.jpg" alt="Album 12">
+                            <span>Ekhtart Sah</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 13 -->
+                    <div class="album-container">
+                        <a href="./Albums/Haeesh Hayati/page/Haeesh Hayati.html" class="album-content">
+                            <img src="./Albums/Haeesh Hayati/images/cover.jpg" alt="Album 13">
+                            <span>Haeesh Hayati</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 14 -->
+                    <div class="album-container">
+                        <a href="./Albums/Aarrab Kaman/page/Aarrab Kaman.html" class="album-content">
+                            <img src="./Albums/Aarrab Kaman/images/cover.jpg" alt="Album 14">
+                            <span>Aarrab Kaman</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 15 -->
+                    <div class="album-container">
+                        <a href="./Albums/El Ganna Fi Beyoutna/page/El Ganna Fi Beyoutna.html" class="album-content">
+                            <img src="./Albums/El Ganna Fi Beyoutna/images/cover.jpg" alt="Album 15">
+                            <span>El Ganna Fi Beyoutna</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 16 -->
+                    <div class="album-container">
+                        <a href="./Albums/Ya Bent El Eh/page/Ya Bent El Eh.html" class="album-content">
+                            <img src="./Albums/Ya Bent El Eh/images/cover.jpg" alt="Album 16">
+                            <span>Ya Bent El Eh</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 17 -->
+                    <div class="album-container">
+                        <a href="./Albums/Enaya Bethebbak/page/Enaya Bethebbak.html" class="album-content">
+                            <img src="./Albums/Enaya Bethebbak/images/cover.jpg" alt="Album 17">
+                            <span>Enaya Bethebbak</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 18 -->
+                    <div class="album-container">
+                        <a href="./Albums/Hob/page/Hob.html" class="album-content">
+                            <img src="./Albums/Hob/images/cover.jpg" alt="Album 18">
+                            <span>Hob</span>
+                        </a>
+                    </div>
+
+                    <!-- Album 19 -->
+                    <div class="album-container">
+                        <a href="./Albums/Free Mix Vol. 3/page/Free Mix Vol. 3.html" class="album-content">
+                            <img src="./Albums/Free Mix Vol. 3/images/cover.jpg" alt="Album 19">
+                            <span>Free Mix Vol. 3</span>
+                        </a>
+                    </div>
+
+                    <!-- Add more albums following the same structure -->
+
+                </div>
+                <!-- Repeat the above structure for the remaining albums -->
+            </div>
+        </section>
+
+
+        <!-- Singles -->
+        <section>
+            <h2 class="c2">Singles</h2>
+            <div class="singles-mobile">
+
+                <div class="playlist-item" data-src="./Singels/Adaha.mp3" data-img="./Singels/images/35.jpg">
+                    <img src="./Singels/images/35.jpg" alt="Single 1">
+                    <span class="S1">Adaha</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/02-Tag-MaTb3aa.Com.mp3"
+                    data-img="./Singels/images/2.jpg">
+                    <img src="./Singels/images/2.jpg" alt="Single 2">
+                    <span class="S1">Taj</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Helw El Makan.mp3" data-img="./Singels/images/36.jpg">
+                    <img src="./Singels/images/36.jpg" alt="Single 2">
+                    <span class="S1">Helw El Makan</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Ramadan Kareem.mp3" data-img="./Singels/images/6.jpg">
+                    <img src="./Singels/images/6.jpg" alt="Single 2">
+                    <span class="S1">Ramadan Kareem</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Aalam Gedid Ehna Awelo.mp3"
+                    data-img="./Singels/images/4.jpg">
+                    <img src="./Singels/images/4.jpg" alt="Single 2">
+                    <span class="S1">Aalam Gedid Ehna Awelo</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Farhet Gheirak.mp3" data-img="./Singels/images/5.jpg">
+                    <img src="./Singels/images/5.jpg" alt="Single 2">
+                    <span class="S1">Farhet Gheirak</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Efra7 by ZED.mp3" data-img="./Singels/images/9.jpg">
+                    <img src="./Singels/images/9.jpg" alt="Single 2">
+                    <span class="S1">Efra7 by ZED</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+
+                <div class="playlist-item" data-src="./Singels/Ya Farha.mp3" data-img="./Singels/images/12.jpg">
+                    <img src="./Singels/images/12.jpg" alt="Single 2">
+                    <span class="S1">Ya Farha</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Orange Free Max.mp3" data-img="./Singels/images/3.jpg">
+                    <img src="./Singels/images/3.jpg" alt="Single 2">
+                    <span class="S1">Orange Free Max</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Saaba.mp3" data-img="./Singels/images/11.jpg">
+                    <img src="./Singels/images/11.jpg" alt="Single 2">
+                    <span class="S1">Saaba</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Bahebak.mp3" data-img="./Singels/images/37.jpg">
+                    <img src="./Singels/images/37.jpg" alt="Single 2">
+                    <span class="S1">Bahebak</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Mesh Temsal.mp3" data-img="./Singels/images/38.jpg">
+                    <img src="./Singels/images/38.jpg" alt="Single 2">
+                    <span class="S1">Mesh Temsal</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Forsa Gedida.mp3" data-img="./Singels/images/39.jpg">
+                    <img src="./Singels/images/39.jpg" alt="Single 2">
+                    <span class="S1">Forsa Gedida</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Intro of Nasl El Aghrab Series.mp3"
+                    data-img="./Singels/images/40.jpg">
+                    <img src="./Singels/images/40.jpg" alt="Single 2">
+                    <span class="S1">Intro of Nasl El Aghrab Series</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Ghany w sama3na.mp3" data-img="./Singels/images/17.jpg">
+                    <img src="./Singels/images/17.jpg" alt="Single 2">
+                    <span class="S1">Ghany w sama3na</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Erfaa Edak.mp3" data-img="./Singels/images/22.jpg">
+                    <img src="./Singels/images/22.jpg" alt="Single 2">
+                    <span class="S1">Erfaa Edak</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Terga3lena Bel Salama.mp3"
+                    data-img="./Singels/images/41.jpg">
+                    <img src="./Singels/images/41.jpg" alt="Single 2">
+                    <span class="S1">Terga3lena Bel Salama</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/El Lahza El 7elwa.mp3"
+                    data-img="./Singels/images/42.jpg">
+                    <img src="./Singels/images/42.jpg" alt="Single 2">
+                    <span class="S1">El Lahza El 7elwa</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/El Asl Masry.mp3" data-img="./Singels/images/14.jpg">
+                    <img src="./Singels/images/14.jpg" alt="Single 2">
+                    <span class="S1">El Asl Masry</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Enta Aqwa.mp3" data-img="./Singels/images/21.jpg">
+                    <img src="./Singels/images/21.jpg" alt="Single 2">
+                    <span class="S1">Enta Aqwa</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Ehna Geel Gded.mp3" data-img="./Singels/images/15.jpg">
+                    <img src="./Singels/images/15.jpg" alt="Single 2">
+                    <span class="S1">Ehna Geel Gded</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Fark Kebir.mp3" data-img="./Singels/images/16.jpg">
+                    <img src="./Singels/images/16.jpg" alt="Single 2">
+                    <span class="S1">Fark Kebir</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Kawkab Tany Cover.mp3"
+                    data-img="./Singels/images/43.jpg">
+                    <img src="./Singels/images/43.jpg" alt="Single 2">
+                    <span class="S1">Kawkab Tany</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Nesyanak Sa3b Akeed.mp3"
+                    data-img="./Singels/images/20.jpg">
+                    <img src="./Singels/images/20.jpg" alt="Single 2">
+                    <span class="S1">Nesyanak Sa3b Akeed</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/عارفة .mp3" data-img="./Singels/images/8.jpg">
+                    <img src="./Singels/images/8.jpg" alt="Single 2">
+                    <span class="S1">عارفة</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/El-Taman.mp3" data-img="./Singels/images/44.jpg">
+                    <img src="./Singels/images/44.jpg" alt="Single 2">
+                    <span class="S1">El-Taman</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Leeh Talah Remix.mp3" data-img="./Singels/images/45.jpg">
+                    <img src="./Singels/images/45.jpg" alt="Single 2">
+                    <span class="S1">Leeh Talah Remix</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Ya_Wa7shny Live.mp3" data-img="./Singels/images/46.jpg">
+                    <img src="./Singels/images/46.jpg" alt="Single 2">
+                    <span class="S1">Ya Wa7shny Live</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Medly Tamer Hosny Romantic.mp3"
+                    data-img="./Singels/images/47.jpg">
+                    <img src="./Singels/images/47.jpg" alt="Single 2">
+                    <span class="S1">Medly Tamer Hosny Romantic</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/De7ketha Mabethazarsh.mp3"
+                    data-img="./Singels/images/48.jpg">
+                    <img src="./Singels/images/48.jpg" alt="Single 2">
+                    <span class="S1">De7ketha Mabethazarsh</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+
+                <div class="playlist-item" data-src="./Singels/Shoofy Ba2a.mp3" data-img="./Singels/images/49.jpg">
+                    <img src="./Singels/images/49.jpg" alt="Single 2">
+                    <span class="S1">Shoofy Ba2a</span>
+                    <button class="play-btn"><span class="material-icons">play_circle</span></button>
+                    <button class="share-btn" onclick="shareSong()"><span class="material-icons">share</span></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add more albums and singles here -->
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer-content">
+        <div class="now-playing">
+            <img id="current-song-img" src="" alt="Now Playing">
+            <span></span>
+            <span id="current-song-name"></span>
+        </div>
+        <div class="controls">
+            <button class="prev-btn"><i class="fas fa-step-backward"></i></button>
+            <button class="play-pause-btn"><i class="fas fa-play"></i></button>
+            <button class="next-btn"><i class="fas fa-step-forward"></i></button>
+        </div>
+        <div class="progress-bar">
+            <div class="current-progress"></div>
+        </div>
+        <div class="volume-bar">
+            <i class="material-icons" style="position:relative;bottom:9px;">volume_up</i>
+            <div class="current-volume"></div>
+        </div>
+        <audio id="audio-player" src="" controls style="display: none;" download="false"></audio>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="./tamer_hosny.js"></script>
+    <script src="https://kit.fontawesome.com/e2bb4f45c2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
