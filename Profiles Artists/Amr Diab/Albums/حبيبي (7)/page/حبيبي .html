@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amr Diab "Makank"</title>
+    <link rel="stylesheet" href="./حبيبي .css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Sidebar Computer -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./logo 4.svg" alt="Your Music App Logo">
+        </div>
+        <div class="links">
+            <a href="../../../../../Home/home.html"><span class="material-symbols-outlined">home</span></a>
+            <a href="../../../../../Artists/artist.html"><span class="material-symbols-outlined">artist</span></a>
+            <a href="#"><span class="material-symbols-outlined">format_list_bulleted</span></a>
+            <a href="../../../../../Favourites/favorite.html"><span class="material-symbols-outlined">favorite</span></a>
+        </div>
+        <hr class="divider"> <!-- خط فاصل -->
+        <div class="settings-user">
+            <div class="settings-icon">
+                <a href="#"><span class="material-symbols-outlined" style="color: #950101;">settings</span></a>
+            </div>
+            <div class="user-icon">
+                <a href="#"><span class="material-symbols-outlined" style="color: #950101;">account_circle</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- البيانات الخاصة بالألبوم -->
+    <div class="album-info">
+        <img src="../images/cover.jpg" alt="Album Cover">
+        <h2>حبيبي</h2>
+        <p><img src="../../../../../Artists/pictures/Amr Diab.jpg" class="artist-thumbnail" alt="Artist Thumbnail"><a
+                href="../../../amr_diab.html">Amr Diab <i class="fas fa-angle-right"></i></a></p>
+        <p class="p1">8 SONGS <br> RELEASE DATE JAN 1991</p>
+        <button>Listen Now</button>
+    </div>
+
+    <h2 class="h1">Album Playlist</h2>
+    <div class="playlist">
+
+        
+        <div class="song-card" data-src="../01.Habibi.mp3" data-img="../images/cover.jpg">
+            <img src="../images/cover.jpg" alt="Song 1">
+            <p>Habibi</p>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+        </div>
+
+        <div class="song-card" data-src="../02.We_Ramany_El_Shoa.mp3" data-img="../images/cover.jpg">
+            <img src="../images/cover.jpg" alt="Song 1">
+            <p>We Ramany El Shoa</p>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+        </div>
+
+        <div class="song-card" data-src="../03.Eh_Bas_Ely_Ramak.mp3" data-img="../images/cover.jpg">
+            <img src="../images/cover.jpg" alt="Song 1">
+            <p>Eh Bas Ely Ramak</p>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+        </div>
+
+        <div class="song-card" data-src="../04.Ella_Maak.mp3" data-img="../images/cover.jpg">
+            <img src="../images/cover.jpg" alt="Song 1">
+            <p>Ella Maak</p>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+        </div>
+
+        <div class="song-card" data-src="../05.Nawy_Teateb.mp3" data-img="../images/cover.jpg">
+            <img src="../images/cover.jpg" alt="Song 1">
+            <p>Nawy Teateb</p>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+        </div>
+
+        <div class="song-card" data-src="../06.Ekhtartik.mp3" data-img="../images/cover.jpg">
+            <img src="../images/cover.jpg" alt="Song 1">
+            <p>Ekhtartik</p>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+        </div>
+
+        <div class="song-card" data-src="../07.Ana_Ashek.mp3" data-img="../images/cover.jpg">
+            <img src="../images/cover.jpg" alt="Song 1">
+            <p>Ana Ashek</p>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+        </div>
+
+        <div class="song-card" data-src="../08.Mistaghrab_Leih.mp3" data-img="../images/cover.jpg">
+            <img src="../images/cover.jpg" alt="Song 1">
+            <p>Mistaghrab Leih</p>
+            <button class="play-button"><i class="fas fa-play"></i></button>
+        </div>
+
+        <!-- البطاقات الأخرى هنا -->
+        <!-- يمكنك تكرار البطاقة السابقة 11 مرة مع تغيير صورة الأغنية واسم الأغنية ومسار الأغنية -->
+    </div>
+    
+
+
+
+
+    <!-- Mobile Footer -->
+    <footer class="mobile-footer">
+        <a href="../../Home/home.html"><span class="material-symbols-outlined">home</span></a>
+        <a href="../../Artists/artist.html"><span class="material-symbols-outlined">artist</span></a>
+        <a href="#"><span class="material-symbols-outlined">format_list_bulleted</span></a>
+        <a href="#"><span class="material-symbols-outlined">favorite</span></a>
+        <!-- <a href="#"><span class="material-symbols-outlined">search</span></a> -->
+        <a href="#"><span class="material-symbols-outlined">account_circle</span></a>
+    </footer>
+
+    <!-- footer -->
+    <footer class="footer-content">
+        <div class="now-playing">
+            <img id="current-song-img" src="" alt="Now Playing">
+            <span></span>
+            <span id="current-song-name"></span>
+        </div>
+        <div class="controls">
+            <button class="prev-btn"><i class="fas fa-step-backward"></i></button>
+            <button class="play-pause-btn"><i class="fas fa-play"></i></button>
+            <button class="next-btn"><i class="fas fa-step-forward"></i></button>
+        </div>
+        <div class="progress-bar">
+            <div class="current-progress"></div>
+        </div>
+        <div class="volume-bar">
+            <i class="material-icons" style="position:relative;bottom:9px;">volume_up</i>
+            <div class="current-volume"></div>
+        </div>
+        <audio id="audio-player" src="" controls style="display: none;" download="false"></audio>
+    </footer>
+
+
+
+    <script src="./حبيبي .js"></script>
+    <script src="https://kit.fontawesome.com/e2bb4f45c2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
