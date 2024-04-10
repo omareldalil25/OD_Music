@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Computer Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="./logo 4.svg" alt="Your Music App Logo">
+        </div>
+        <div class="nav-links">
+            <a href="./home.html"><span class="material-symbols-outlined">home</span> &nbsp;Home</a>
+            <a href="../Artists/artist.html"><span class="material-symbols-outlined">artist</span> &nbsp;Artists</a>
+            <a href="#"><span class="material-symbols-outlined">format_list_bulleted</span> &nbsp;Playlists</a>
+            <a href="#"><span class="material-symbols-outlined">favorite</span> &nbsp;Favorites</a>
+        </div>
+        <div class="search-box">
+            <span class="search-icon">
+                <span class="material-symbols-outlined" style="color: black;font-weight: 500;">search</span>
+            </span>
+            <input type="text" class="search-input" placeholder="  Search...">
+        </div>
+        <div class="user-dropdown" onmouseleave="closeDropdown()">
+            <span class="user-icon" onclick="toggleDropdown()">
+                <span class="material-symbols-outlined" style="font-size: 30px;">account_circle</span>
+            </span>
+            <div class="dropdown-content" id="userDropdown">
+                <a href="#">Upgrade to Premium <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#"><i class="fa-sharp fa-solid fa-gear"></i> Settings</a>
+                <hr>
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i> LogOut</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-navbar">
+        <img src="./logo 42.svg" alt="Logo">
+      </div>
+
+    <!-- Slider  -->
+    <div class="slider">
+
+            <div class="music-info">
+                <span class="material-symbols-outlined">
+                    chart_data
+                    </span>
+                <h2>Trending Now</h2>
+            </div>
+    
+            <span class="arrow left" onclick="scrollLeftFunction()">
+                <i class="fas fa-arrow-left"></i>
+            </span>
+    
+            <!-- Cards -->
+            <div class="song-rows" id="songRows">
+                <!-- Row 1 -->
+                <div class="song-row">
+    
+                    <div class="card" data-src="./Songs/02-Ben.ElHettan-MaTb3aa.Com.mp3" data-img="./images/25.jpg">
+                        <img src="./images/25.jpg" alt="Song 1">
+                        <h3>Ben El-Hettan</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+    
+                    <div class="card" data-src="./Songs/Haygeley Mwgoa3.mp3" data-img="./images/9.jpg">
+                        <img src="./images/9.jpg" alt="Song 1">
+                        <h3>هيجيلي موجوع</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+    
+                    <div class="card" data-src="./Songs/Ya Amar.mp3" data-img="./images/70.jpg">
+                        <img src="./images/70.jpg" alt="Song 1">
+                        <h3>Ya Amar</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+                    
+                    <div class="card" data-src="./Songs/Etnyn Bmkam Mlayyn.mp3" data-img="./images/10.jpg">
+                        <img src="./images/10.jpg" alt="Song 1">
+                        <h3>اتنين بمقام ملايين</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+
+                    <div class="card" data-src="./Songs/07-Mawdoa.Rogoana-MaTb3aa.Com.mp3"
+                        data-img="./images/15.jpg">
+                        <img src="./images/15.jpg" alt="Song 1">
+                        <h3>موضوع رجوعنا</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+
+                    <div class="card" data-src="./Songs/سبب فرحتي - دندنها.mp3" data-img="./images/12.jpg">
+                        <img src="./images/12.jpg" alt="Song 1">
+                        <h3>Sabb Farhety</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+
+                    <div class="card" data-src="./Songs/Bo3do.Fare2-Ramy-Gamal-MaTb3aa.Com.mp3" data-img="./images/16.jpg">
+                        <img src="./images/16.jpg" alt="Song 1">
+                        <h3>Bo3do Fare2</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+
+                    <div class="card" data-src="./Songs/Salamak Wasaly .mp3"
+                        data-img="./images/26.jpg">
+                        <img src="./images/26.jpg" alt="Song 1">
+                        <h3>سلامك وصلي</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+
+                    <div class="card" data-src="./Songs/Kda.Kda.Bayza-Mahmoud.ElEsseily-MaTb3aa.Com.mp3" data-img="./images/17.jpg">
+                        <img src="./images/17.jpg" alt="Song 1">
+                        <h3>Kda Kda Bayza</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+
+                    <div class="card" data-src="./Songs/04-Fouq-MaTb3aa.Com.mp3" data-img="./images/24.jpg">
+                        <img src="./images/24.jpg" alt="Song 1">
+                        <h3>Fouq</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+
+                    <div class="card" data-src="./Songs/Kalam Eineh.mp3"
+                        data-img="./images/11.jpg">
+                        <img src="./images/11.jpg" alt="Song 1">
+                        <h3>Kalam Eineh</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+    
+                    <div class="card" data-src="./Songs/وصلتلها - دندنها.mp3" data-img="./images/13.jpg">
+                        <img src="./images/13.jpg" alt="Song 1">
+                        <h3>Woseltelha</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+    
+                    <div class="card" data-src="./Songs/Diva-Sharmoofers-MaTb3aa.Com.mp3" data-img="./images/18.jpg">
+                        <img src="./images/18.jpg" alt="Song 1">
+                        <h3>Diva</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+    
+                    <div class="card" data-src="./Songs/Lafena.Eldonya-Rada.Elbahrwy-MaTb3aa.Com.mp3" data-img="./images/19.jpg">
+                        <img src="./images/19.jpg" alt="Song 1">
+                        <h3>Lafena Eldonya</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+    
+                    <div class="card" data-src="./Songs/LAMOON.NE3NA3-Hamaki-MaTb3aa.Com.mp3" data-img="./images/20.jpg">
+                        <img src="./images/20.jpg" alt="Song 1">
+                        <h3>Lamoon Ne3na3</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+    
+                    <div class="card" data-src="./Songs/02-Ymken.Kher-MaTb3aa.Com.mp3" data-img="./images/21.jpg">
+                        <img src="./images/21.jpg" alt="Song 1">
+                        <h3>Ymken Kher</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+    
+                    <div class="card" data-src="./Songs/Mekhasmak-Malika-MaTb3aa.Com.mp3" data-img="./images/22.jpg">
+                        <img src="./images/22.jpg" alt="Song 1">
+                        <h3>Mekhasmak</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+    
+                    <div class="card" data-src="./Songs/Kolo.Falso-Ahmed.Saad-MaTb3aa.Com.mp3" data-img="./images/23.jpg">
+                        <img src="./images/23.jpg" alt="Song 1">
+                        <h3>Kolo Falso</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+    
+    
+                    <!-- Add more cards as needed -->
+                </div>
+                <!-- Add more rows as needed -->
+            </div>
+    
+            <span class="arrow right" onclick="scrollRightFunction()">
+                <i class="fas fa-arrow-right"></i>
+            </span>
+    
+    </div>
+
+    <!-- Slider 2 -->
+    <div class="slider2">
+
+        <div class="music-info">
+            <span class="material-symbols-outlined">
+                note_stack_add
+                </span>
+            <h2>Your New Music</h2>
+        </div>
+
+        <span class="arrow left" onclick="scrollLeftFunction2()">
+            <i class="fas fa-arrow-left"></i>
+        </span>
+
+        <!-- Cards -->
+        <div class="song-rows" id="songRows2">
+            <!-- Row 1 -->
+
+            <div class="song-row">
+
+                <div class="card" data-src="./Songs/Adaha.mp3" data-img="./images/35.jpg">
+                    <img src="./images/35.jpg" alt="Song 1">
+                    <h3>Adaha</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+                
+                <div class="card" data-src="./Songs/El Kelma El Helwa.mp3" data-img="./images/4.jpg">
+                    <img src="./images/4.jpg" alt="Song 1">
+                    <h3>الكلمة الحلوة</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Alsa3at.Elhelwa.mp3"
+                    data-img="./images/5.jpg">
+                    <img src="./images/5.jpg" alt="Song 1">
+                    <h3>Alsa3at Elhelwa</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/اسمراني عيونه سمرا - مزكني.mp3" data-img="./images/1.jpg">
+                    <img src="./images/1.jpg" alt="Song 1">
+                    <h3>اسمراني عيونه سمرا</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Hekayetna Helwa.mp3" data-img="./images/3.jpg">
+                    <img src="./images/3.jpg" alt="Song 1">
+                    <h3>حكايتنا حلوة</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Qonbelt.Algeel-Hasan.Shakosh-MaTb3aa.Com.mp3" data-img="./images/28.jpg">
+                    <img src="./images/28.jpg" alt="Song 1">
+                    <h3>قمبلة الجيل</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Al3atawla-Ahmed.Elsa2a-MaTb3aa.Com.mp3" data-img="./images/27.jpg">
+                    <img src="./images/27.jpg" alt="Song 1">
+                    <h3>Al3atawla</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/ابن اللعيبة - تتر البداية لمسلسل كوبرا - مزكني.mp3"
+                    data-img="./images/2.jpg">
+                    <img src="./images/2.jpg" alt="Song 1">
+                    <h3>ابن اللعيبة</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/لذاذة - من مسلسل بابا جه - مزكني.mp3" data-img="./images/7.jpg">
+                    <img src="./images/7.jpg" alt="Song 1">
+                    <h3>Lazaza</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/عيش زي ماتحب - إعلان Inertia - مزكني.mp3" data-img="./images/6.jpg">
+                    <img src="./images/6.jpg" alt="Song 1">
+                    <h3>عيش زي ماتحب</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <!-- Add more cards as needed -->
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+
+        <span class="arrow right" onclick="scrollRightFunction2()">
+            <i class="fas fa-arrow-right"></i>
+        </span>
+
+    </div>
+
+    <!-- Slider 3 -->
+    <div class="slider3">
+
+        <div class="music-info">
+            <span class="material-symbols-outlined">
+                sentiment_dissatisfied
+                </span>
+            <h2>Sad Mood</h2>
+        </div>
+
+        <span class="arrow left" onclick="scrollLeftFunction3()">
+            <i class="fas fa-arrow-left"></i>
+        </span>
+
+        <!-- Cards -->
+        <div class="song-rows" id="songRows3">
+            <!-- Row 1 -->
+            <div class="song-row">
+
+                <div class="card" data-src="./Songs/Enta Ekhtart.mp3"
+                    data-img="./images/33.jpg">
+                    <img src="./images/33.jpg" alt="Song 1">
+                    <h3>Enta Ekhtart</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/03._Hayeish_Yeftekerni.mp3"
+                    data-img="./images/41.jpg">
+                    <img src="./images/41.jpg" alt="Song 1">
+                    <h3>هيعيش يفتكرني</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/05-Ana.Ghaltan-MaTb3aa.Com.mp3" data-img="./images/29.jpg">
+                    <img src="./images/29.jpg" alt="Song 1">
+                    <h3>Ana Ghaltan</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Fe.Ghamdet.Ein-Ramy.Gamal-MaTb3aa.Com.mp3" data-img="./images/30.jpg">
+                    <img src="./images/30.jpg" alt="Song 1">
+                    <h3>Fe Ghamdet Ein</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Etnaset-Muslim-MaTb3aa.Com.mp3" data-img="./images/31.jpg">
+                    <img src="./images/31.jpg" alt="Song 1">
+                    <h3>Etnaset</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Fagaa Eftaraana.mp3" data-img="./images/34.jpg">
+                    <img src="./images/34.jpg" alt="Song 1">
+                    <h3>فجأة افترقنا</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Wagaa.ElHawa-Mahmoud.Elesseily-MaTb3aa.Com.mp3"
+                    data-img="./images/40.jpg">
+                    <img src="./images/40.jpg" alt="Song 1">
+                    <h3>Wagaa ElHawa</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/W Flayaly Azaby.mp3"
+                    data-img="./images/33.jpg">
+                    <img src="./images/33.jpg" alt="Song 1">
+                    <h3>وف ليالي عذابي</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Khasemt.ElNoum-Shereen-MaTb3aa.Com.mp3"
+                    data-img="./images/37.jpg">
+                    <img src="./images/37.jpg" alt="Song 1">
+                    <h3>خاصمت النوم</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Wa2t.Sheda-Ahmed.Saad-MaTb3aa.Com.mp3"
+                    data-img="./images/38.jpg">
+                    <img src="./images/38.jpg" alt="Song 1">
+                    <h3>Wa2t Sheda</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Dars.Hayaty-Nabil-MaTb3aa.Com.mp3"
+                    data-img="./images/48.jpg">
+                    <img src="./images/48.jpg" alt="Song 1">
+                    <h3>Dars Hayaty</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Albumaty.Com_mhmd_hmaky_lylt_mn_lyalyk.mp3"
+                    data-img="./images/39.jpg">
+                    <img src="./images/39.jpg" alt="Song 1">
+                    <h3>ولا ليله من لياليك</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Kont Fien.mp3" data-img="./images/32.jpg">
+                    <img src="./images/32.jpg" alt="Song 1">
+                    <h3>Kont Fien</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/W.Bahleflak-Sherine-MaTb3aa.Com.mp3" data-img="./images/36.jpg">
+                    <img src="./images/36.jpg" alt="Song 1">
+                    <h3>W Bahleflak</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Ahy.Mshyet-Farid-MaTb3aa.Com.mp3" data-img="./images/62.jpg">
+                    <img src="./images/62.jpg" alt="Song 1">
+                    <h3>Ahy Mshyet</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <!-- Add more cards as needed -->
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+
+        <span class="arrow right" onclick="scrollRightFunction3()">
+            <i class="fas fa-arrow-right"></i>
+        </span>
+
+    </div>
+
+    <!-- Slider 4 -->
+    <div class="slider4">
+
+        <div class="music-info">
+            <span class="material-symbols-outlined">
+                celebration
+                </span>
+            <h2>Celebration Mood</h2>
+        </div>
+
+        <span class="arrow left" onclick="scrollLeftFunction4()">
+            <i class="fas fa-arrow-left"></i>
+        </span>
+
+        <!-- Cards -->
+        <div class="song-rows" id="songRows4">
+            <!-- Row 1 -->
+            <div class="song-row">
+
+                <div class="card" data-src="./Songs/BonBonaya-Mahmoud.Elithe-MaTb3aa.Com.mp3" data-img="./images/54.jpg">
+                    <img src="./images/54.jpg" alt="Song 1">
+                    <h3>BonBonaya</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Mahragan.Enty.M3lma-MaTb3aa.Com.mp3" data-img="./images/51.jpg">
+                    <img src="./images/51.jpg" alt="Song 1">
+                    <h3>Enty M3lma</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="card" data-src="./Songs/Kolo.Falso-Ahmed.Saad-MaTb3aa.Com.mp3" data-img="./images/23.jpg">
+                    <img src="./images/23.jpg" alt="Song 1">
+                    <h3>Kolo Falso</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Hadal3ny-Tamer.Hosny-MaTb3aa.Com.mp3" data-img="./images/43.jpg">
+                    <img src="./images/43.jpg" alt="Song 1">
+                    <h3>Hadal3ny</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Namet.Nenna-Ruby-MaTb3aa.Com.mp3"
+                    data-img="./images/47.jpg">
+                    <img src="./images/47.jpg" alt="Song 1">
+                    <h3>Namet Nenna</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Sama3.Hos-Mahmoud.El3sely-MaTb3aa.Com.mp3"
+                    data-img="./images/44.jpg">
+                    <img src="./images/44.jpg" alt="Song 1">
+                    <h3>Sama3 Hos</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Khatw2a-Mostafa.Hagag-MaTb3aa.Com.mp3" data-img="./images/45.jpg">
+                    <img src="./images/45.jpg" alt="Song 1">
+                    <h3>Khatw2a</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Ya.Lahwy-Mahmoud.El.Lithy-MaTb3aa.Com.mp3" data-img="./images/46.jpg">
+                    <img src="./images/46.jpg" alt="Song 1">
+                    <h3>Ya Lahwy</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/05.Ghamazat.mp3" data-img="./images/42.jpg">
+                    <img src="./images/42.jpg" alt="Song 1">
+                    <h3>Ghamazat</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/3m.Ya.Sayaad-Mahmoud.Ellithe-MaTb3aa.Com.mp3"
+                    data-img="./images/53.jpg">
+                    <img src="./images/53.jpg" alt="Song 1">
+                    <h3>3m Ya Sayaad</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Dndnha.Com.Hassan.Shakosh.Ft.Omar.Kamal.Han3mal.Lagbtita.mp3"
+                    data-img="./images/50.jpg">
+                    <img src="./images/50.jpg" alt="Song 1">
+                    <h3>Lagbtita</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Mahrgan.Sebak.Mn.Aly.Khala3-MaTb3aa.Com.mp3"
+                    data-img="./images/52.jpg">
+                    <img src="./images/52.jpg" alt="Song 1">
+                    <h3>سيبك من اللي خلع</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/El.Youm.Elhelw.Dah-Ahmed.Saad-MaTb3aa.Com.mp3"
+                    data-img="./images/49.jpg">
+                    <img src="./images/49.jpg" alt="Song 1">
+                    <h3>ايه اليوم الحلو ده</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/04-Alby.Plastic-MaTb3aa.Com.mp3"
+                    data-img="./images/56.jpg">
+                    <img src="./images/56.jpg" alt="Song 1">
+                    <h3>Alby Plastic</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Beraha.Ya.Sheekha-Bahaa.Sultan-MaTb3aa.Com.mp3"
+                    data-img="./images/55.jpg">
+                    <img src="./images/55.jpg" alt="Song 1">
+                    <h3>براحة يا شيخة</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <!-- Add more cards as needed -->
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+
+        <span class="arrow right" onclick="scrollRightFunction4()">
+            <i class="fas fa-arrow-right"></i>
+        </span>
+
+    </div>
+
+    <!-- Slider 5 -->
+    <div class="slider5">
+
+        <div class="music-info">
+            <span class="material-symbols-outlined">
+                equalizer
+                </span>
+            <h2>Top Mahraganat</h2>
+        </div>
+
+        <span class="arrow left" onclick="scrollLeftFunction5()">
+            <i class="fas fa-arrow-left"></i>
+        </span>
+
+        <!-- Cards -->
+        <div class="song-rows" id="songRows5">
+            <!-- Row 1 -->
+            <div class="song-row">
+
+                <div class="card" data-src="./Songs/Tarek.Alandal-Hamada.Ellithe-MaTb3aa.Com.mp3" data-img="./images/57.jpg">
+                    <img src="./images/57.jpg" alt="Song 1">
+                    <h3>Tarek Alandal</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/A3la.Safqa-Muslm-MaTb3aa.Com.mp3" data-img="./images/58.jpg">
+                    <img src="./images/58.jpg" alt="Song 1">
+                    <h3>Gheyrak Hawel</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Qonbelt.Algeel-Hasan.Shakosh-MaTb3aa.Com.mp3" data-img="./images/28.jpg">
+                    <img src="./images/28.jpg" alt="Song 1">
+                    <h3>قمبلة الجيل</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Mahrgan.Kolha.B2a.Leha.Akhsam-MaTb3aa.Com.mp3"
+                    data-img="./images/59.jpg">
+                    <img src="./images/59.jpg" alt="Song 1">
+                    <h3>كلها بقي ليها اخصام</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Albumaty.Com.Hamo.Bika.Ashaby.A5samy.mp3" data-img="./images/60.jpg">
+                    <img src="./images/60.jpg" alt="Song 1">
+                    <h3>Ashaby A5samy</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Elghal.Meni.Hareko-Mahmoud.Ellithy-MaTb3aa.Com.mp3" data-img="./images/61.jpg">
+                    <img src="./images/61.jpg" alt="Song 1">
+                    <h3>الغل مني هاريكو</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Mahrgan.Qarmet.Qrmet-MaTb3aa.Com.mp3" data-img="./images/63.jpg">
+                    <img src="./images/63.jpg" alt="Song 1">
+                    <h3>قراميط قراميط</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Mahrgan.Khatr-MaTb3aa.Com.mp3"
+                    data-img="./images/64.jpg">
+                    <img src="./images/64.jpg" alt="Song 1">
+                    <h3>Khatr</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Mahrgan.Matgaz-MaTb3aa.Com.mp3"
+                    data-img="./images/65.jpg">
+                    <img src="./images/65.jpg" alt="Song 1">
+                    <h3>متغاظ</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Mahrgan.Hala.Wala-MaTb3aa.Com.mp3"
+                    data-img="./images/66.jpg">
+                    <img src="./images/66.jpg" alt="Song 1">
+                    <h3>Hala Wala</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Mahrgan.Bahr.Shar-MaTb3aa.Com.mp3"
+                    data-img="./images/67.jpg">
+                    <img src="./images/67.jpg" alt="Song 1">
+                    <h3>Bahr Shar</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Mahrgan.Ya.Asfaar-MaTb3aa.Com.mp3"
+                    data-img="./images/68.jpg">
+                    <img src="./images/68.jpg" alt="Song 1">
+                    <h3>Ya Asfaar</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <div class="card" data-src="./Songs/Dndnha.Com.Hassan.Shakosh.Oud.Elbatal.mp3"
+                    data-img="./images/69.jpg">
+                    <img src="./images/69.jpg" alt="Song 1">
+                    <h3>Oud Elbatal</h3>
+                    <button class="play-button"><i class="fas fa-play"></i></button>
+                </div>
+
+                <!-- Add more cards as needed -->
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+
+        <span class="arrow right" onclick="scrollRightFunction5()">
+            <i class="fas fa-arrow-right"></i>
+        </span>
+
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer-content">
+        <div class="now-playing">
+            <img id="current-song-img" src="" alt="Now Playing">
+            <span></span>
+            <span id="current-song-name"></span>
+        </div>
+        <div class="controls">
+            <button class="prev-btn"><i class="fas fa-step-backward"></i></button>
+            <button class="play-pause-btn"><i class="fas fa-play"></i></button>
+            <button class="next-btn"><i class="fas fa-step-forward"></i></button>
+        </div>
+        <div class="progress-bar">
+            <div class="current-progress"></div>
+        </div>
+        <div class="volume-bar">
+            <i class="material-icons" style="position:relative;bottom:9px;">volume_up</i>
+            <div class="current-volume"></div>
+        </div>
+        <audio id="audio-player" src="" controls style="display: none;" download="false"></audio>
+    </footer> 
+
+    <!-- Mobile Footer -->
+    <footer class="mobile-footer">
+        <a href="./home.html"><span class="material-symbols-outlined">home</span></a>
+        <a href="../Artists/artist.html"><span class="material-symbols-outlined">artist</span></a>
+        <a href="#"><span class="material-symbols-outlined">format_list_bulleted</span></a>
+        <a href="#"><span class="material-symbols-outlined">favorite</span></a>
+        <!-- <a href="#"><span class="material-symbols-outlined">search</span></a> -->
+        <a href="#"><span class="material-symbols-outlined">account_circle</span></a>
+    </footer>
+
+    <script src="./home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e2bb4f45c2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,1340 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, #A6C420, #008100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8.7vh;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 90%;
+}
+
+.logo img {
+    height: auto;
+    width: 200%;
+    position: relative;
+    right: 30%;
+    margin-bottom: 5.8rem;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: auto;
+    margin-top: 1.7rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 16px;
+    display: inline-flex;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 1.8rem;
+}
+
+.search-input {
+    border: none;
+    padding: 9px;
+    border-radius: 20px;
+    width: 200px;
+    outline: none;
+    margin-left: 10px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 55%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 20px;
+}
+
+.user-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.user-icon {
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-width: 206px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a i {
+    margin-left: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .mobile-footer a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .content {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 601px) {
+    footer {
+        display: none;
+    }
+}
+
+
+/* تنسيق الشريط السفلي في الفوتر */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 1px;
+    left: 85px;
+    width: 92%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    /* يجعل حواف الهيدر دائرية */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* يضيف ظل للهيدر */
+    height: 30px;
+}
+
+.footer-content img {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    position: relative;
+    top: 8px;
+    left: 20px;
+}
+
+/* @media only screen and (max-width: 600px) {
+    .footer-content {
+        display: none;
+    }
+} */
+
+/* أزرار القائمة */
+.controls {
+    position: absolute;
+    left: 22.8%;
+    top: 25%;
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+    transition: transform 0.3s ease;
+    position: relative;
+    left: 240%;
+    margin-bottom: 20%;
+}
+
+.controls button:hover {
+    transform: scale(1.2);
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+    transition: transform 0.3s ease;
+    position: relative;
+    left: 340px;
+    bottom: 8px;
+}
+
+.controls button:hover {
+    transform: scale(1.2);
+}
+
+/* أزرار التشغيل والتوقف */
+/* تخصيص أزرار التشغيل */
+.play-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 850px;
+}
+
+.play-btn .material-icons {
+    font-size: 33px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.play-btn:hover .material-icons {
+    color: #ff4500;
+    /* تغيير اللون عند التحويم */
+}
+
+/* تخصيص أزرار المشاركة */
+.share-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 910px;
+}
+
+.share-btn .material-icons {
+    font-size: 32px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.share-btn:hover .material-icons {
+    color: #00f;
+    /* تغيير اللون عند التحويم */
+}
+
+/* شريط التقدم للأغنية */
+.progress-bar {
+    width: 50%;
+    height: 5px;
+    background-color: #ddd;
+    position: absolute;
+    right: 25%;
+    top: 60%;
+}
+
+/* تكملة تنسيق شريط التقدم للأغنية */
+.progress-bar .current-progress {
+    height: 100%;
+    background-color: #ff4500;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.volume-bar {
+    width: 60px;
+    /* طول شريط التحكم */
+    height: 5px;
+    /* ارتفاع شريط التحكم */
+    background-color: #ddd;
+    position: absolute;
+    right: 12%;
+    top: 60%;
+}
+
+/* تنسيق أيقونة الصوت */
+.volume-bar .material-icons {
+    font-size: 22px;
+    /* حجم الأيقونة */
+    color: #fff;
+    /* لون الأيقونة */
+    margin-right: 5px;
+    /* تباعد بين الأيقونة وشريط التحكم في مستوى الصوت */
+    position: relative;
+    right: 50px;
+    bottom: 8px;
+}
+
+.volume-bar .current-volume {
+    height: 100%;
+    background-color: #ff4500;
+    /* لون الشريط عند التحكم */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* أيقونات الشريط */
+.footer-content .controls button i {
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .volume-bar {
+        display: none;
+    }
+
+    .footer-content {
+        position: fixed;
+        left: 1px;
+        bottom: 57.2px;
+        max-width: 100%;
+        height: 3.5%;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 2px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-content span {
+        color: #fff;
+        font-weight: bold;
+        position: absolute;
+        bottom: 25px;
+        left: 80px;
+        display: inline-block;
+    }
+
+    .footer-content img {
+        position: absolute;
+        left: 20px;
+        top: 8px;
+    }
+
+    .progress-bar {
+        width: 35%;
+        position: absolute;
+        left: 80px;
+    }
+
+    .controls {
+        position: absolute;
+        left: -75px;
+        font-size: 2px;
+        top: 20px;
+    }
+}
+
+/*-----------------------------------*/
+/* Slider */
+.slider {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 50px;
+    position: absolute;
+    top: 60px;
+}
+
+.music-info {
+    text-align: left;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.music-info i {
+    font-size: 24px;
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: 18px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Pacifico&display=swap');
+.music-info h2 {
+    font-size: 20px;
+    margin-top: 0;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    font-family: "Pacifico", cursive;
+}
+
+/* Song Rows */
+.song-rows {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+.song-row {
+    display: flex;
+    scroll-snap-align: start;
+}
+
+.card {
+    width: 180px;
+    margin: 0 10px;
+    height: 248px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    scroll-snap-type: none;
+    /* Disable snap scrolling */
+}
+
+.card img {
+    padding: 8px;
+    width: 85%;
+    height: 59%;
+    border-radius: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+
+.card h3 {
+    margin-top: 10px;
+    font-family: "Permanent Marker", cursive;
+    color: #fff;
+    font-size: 15px;
+}
+
+.play-button {
+    background-color: #A6C420;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+.music-info .material-symbols-outlined{
+    font-size: 40px;
+    position: relative;
+    top: 26px;
+}
+
+@media only screen and (max-width: 600px) {
+    .slider {
+        position: absolute;
+        top: 10px;
+    }
+
+    .song-row {
+        gap: 10px;
+        /* Add gap between cards */
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        scroll-snap-type: none;
+        /* Disable snap scrolling */
+    }
+
+    .card {
+        flex: 0 0 calc(45% - 8px);
+        margin-right: 2px;
+        height: 80%;
+        width: 10%;
+    }
+
+    .card img {
+        padding: 8px;
+        width: 70%;
+        height: 62%;
+        border-radius: 20px;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+
+    .card h3 {
+        margin-top: 2px;
+        font-family: "Permanent Marker", cursive;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+    }
+    .play-button {
+        background-color: #A6C420;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        position: relative;
+        bottom: 80px;
+        left: 25px;
+    }
+    .music-info {
+        text-align: left;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    
+    .music-info i {
+        font-size: 24px;
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        top: 18px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Pacifico&display=swap');
+    .music-info h2 {
+        font-size: 20px;
+        margin-top: 0;
+        display: inline-block;
+        position: relative;
+        top: 15px;
+        font-family: "Pacifico", cursive;
+    }    
+}
+/*-----------------------------------*/
+/* Slider 2 */
+.slider2 {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 50px;
+    position: absolute;
+    top: 380px;
+}
+
+.music-info {
+    text-align: left;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.music-info i {
+    font-size: 24px;
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: 18px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+.music-info h2 {
+    font-size: 20px;
+    margin-top: 0;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    font-family: "Pacifico", cursive;
+}
+
+/* Song Rows */
+.song-rows {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+.song-row {
+    display: flex;
+    scroll-snap-align: start;
+}
+
+.card {
+    width: 180px;
+    margin: 0 10px;
+    height: 248px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    scroll-snap-type: none;
+    /* Disable snap scrolling */
+}
+
+.card img {
+    padding: 8px;
+    width: 85%;
+    height: 59%;
+    border-radius: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+
+.card h3 {
+    margin-top: 10px;
+    font-family: "Permanent Marker", cursive;
+    color: #fff;
+    font-size: 15px;
+}
+
+.play-button {
+    background-color: #A6C420;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+.music-info .material-symbols-outlined{
+    font-size: 40px;
+    position: relative;
+    top: 26px;
+}
+
+@media only screen and (max-width: 600px) {
+    .slider2 {
+        position: absolute;
+        top: 230px;
+    }
+
+    .song-row {
+        gap: 10px;
+        /* Add gap between cards */
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        scroll-snap-type: none;
+        /* Disable snap scrolling */
+    }
+
+    .card {
+        flex: 0 0 calc(45% - 8px);
+        margin-right: 2px;
+        height: 80%;
+        width: 10%;
+    }
+
+    .card img {
+        padding: 8px;
+        width: 70%;
+        height: 62%;
+        border-radius: 20px;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+
+    .card h3 {
+        margin-top: 2px;
+        font-family: "Permanent Marker", cursive;
+        color: #fff;
+        font-size: 14px;
+    }
+    .play-button {
+        background-color: #A6C420;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        position: relative;
+        bottom: 80px;
+        left: 25px;
+    }
+    .music-info {
+        text-align: left;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    
+    .music-info i {
+        font-size: 24px;
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        top: 18px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+    .music-info h2 {
+        font-size: 20px;
+        margin-top: 0;
+        display: inline-block;
+        position: relative;
+        top: 15px;
+        font-family: "Pacifico", cursive;
+    }    
+}
+/*-----------------------------------*/
+/* Slider 3 */
+.slider3 {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 50px;
+    position: absolute;
+    top: 705px;
+}
+
+.music-info {
+    text-align: left;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.music-info i {
+    font-size: 24px;
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: 18px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+.music-info h2 {
+    font-size: 20px;
+    margin-top: 0;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    font-family: "Pacifico", cursive;
+}
+
+/* Song Rows */
+.song-rows {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+.song-row {
+    display: flex;
+    scroll-snap-align: start;
+}
+
+.card {
+    width: 180px;
+    margin: 0 10px;
+    height: 248px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    scroll-snap-type: none;
+    /* Disable snap scrolling */
+}
+
+.card img {
+    padding: 8px;
+    width: 85%;
+    height: 59%;
+    border-radius: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+
+.card h3 {
+    margin-top: 10px;
+    font-family: "Permanent Marker", cursive;
+    color: #fff;
+    font-size: 15px;
+}
+
+.play-button {
+    background-color: #A6C420;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+.music-info .material-symbols-outlined{
+    font-size: 40px;
+    position: relative;
+    top: 26px;
+}
+
+@media only screen and (max-width: 600px) {
+    .slider3 {
+        position: absolute;
+        top: 455px;
+    }
+
+    .song-row {
+        gap: 10px;
+        /* Add gap between cards */
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        scroll-snap-type: none;
+        /* Disable snap scrolling */
+    }
+
+    .card {
+        flex: 0 0 calc(45% - 8px);
+        margin-right: 2px;
+        height: 80%;
+        width: 10%;
+    }
+
+    .card img {
+        padding: 8px;
+        width: 70%;
+        height: 62%;
+        border-radius: 20px;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+
+    .card h3 {
+        margin-top: 2px;
+        font-family: "Permanent Marker", cursive;
+        color: #fff;
+        font-size: 14px;
+    }
+    .play-button {
+        background-color: #A6C420;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        position: relative;
+        bottom: 80px;
+        left: 25px;
+    }
+    .music-info {
+        text-align: left;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    
+    .music-info i {
+        font-size: 24px;
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        top: 18px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+    .music-info h2 {
+        font-size: 20px;
+        margin-top: 0;
+        display: inline-block;
+        position: relative;
+        top: 15px;
+        font-family: "Pacifico", cursive;
+    }    
+}
+/*-----------------------------------*/
+/* Slider 4 */
+.slider4 {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 50px;
+    position: absolute;
+    top: 1030px;
+}
+
+.music-info {
+    text-align: left;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.music-info i {
+    font-size: 24px;
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: 18px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+.music-info h2 {
+    font-size: 20px;
+    margin-top: 0;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    font-family: "Pacifico", cursive;
+}
+
+/* Song Rows */
+.song-rows {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+.song-row {
+    display: flex;
+    scroll-snap-align: start;
+}
+
+.card {
+    width: 180px;
+    margin: 0 10px;
+    height: 248px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    scroll-snap-type: none;
+    /* Disable snap scrolling */
+}
+
+.card img {
+    padding: 8px;
+    width: 85%;
+    height: 59%;
+    border-radius: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+
+.card h3 {
+    margin-top: 10px;
+    font-family: "Permanent Marker", cursive;
+    color: #fff;
+    font-size: 15px;
+}
+
+.play-button {
+    background-color: #A6C420;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+.music-info .material-symbols-outlined{
+    font-size: 40px;
+    position: relative;
+    top: 26px;
+}
+
+@media only screen and (max-width: 600px) {
+    .slider4 {
+        position: absolute;
+        top: 670px;
+    }
+
+    .song-row {
+        gap: 0px;
+        /* Add gap between cards */
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        scroll-snap-type: none;
+        /* Disable snap scrolling */
+    }
+
+    .card {
+        flex: 0 0 calc(45% - 22px);
+        margin-right: 2px;
+        height: 80%;
+        width: 10%;
+    }
+
+    .card img {
+        padding: 8px;
+        width: 70%;
+        height: 62%;
+        border-radius: 20px;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+
+    .card h3 {
+        margin-top: 2px;
+        font-family: "Permanent Marker", cursive;
+        color: #fff;
+        font-size: 14px;
+    }
+    .play-button {
+        background-color: #A6C420;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        position: relative;
+        bottom: 80px;
+        left: 25px;
+    }
+    .music-info {
+        text-align: left;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    
+    .music-info i {
+        font-size: 24px;
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        top: 18px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+    .music-info h2 {
+        font-size: 20px;
+        margin-top: 0;
+        display: inline-block;
+        position: relative;
+        top: 15px;
+        font-family: "Pacifico", cursive;
+    }    
+}
+/*-----------------------------------*/
+/* Slider 5 */
+.slider5 {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 50px;
+    position: absolute;
+    top: 1350px;
+}
+
+.music-info {
+    text-align: left;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.music-info i {
+    font-size: 24px;
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: 18px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+.music-info h2 {
+    font-size: 20px;
+    margin-top: 0;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    font-family: "Pacifico", cursive;
+}
+
+/* Song Rows */
+.song-rows {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+.song-row {
+    display: flex;
+    scroll-snap-align: start;
+}
+
+.card {
+    width: 180px;
+    margin: 0 10px;
+    height: 248px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    scroll-snap-type: none;
+    /* Disable snap scrolling */
+}
+
+.card img {
+    padding: 8px;
+    width: 85%;
+    height: 59%;
+    border-radius: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+
+.card h3 {
+    margin-top: 10px;
+    font-family: "Permanent Marker", cursive;
+    color: #fff;
+    font-size: 15px;
+}
+
+.play-button {
+    background-color: #A6C420;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+.music-info .material-symbols-outlined{
+    font-size: 40px;
+    position: relative;
+    top: 26px;
+}
+
+@media only screen and (max-width: 600px) {
+    .slider5 {
+        position: absolute;
+        top: 880px;
+    }
+
+    .song-row {
+        gap: 0px;
+        /* Add gap between cards */
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        scroll-snap-type: none;
+        /* Disable snap scrolling */
+    }
+
+    .card {
+        flex: 0 0 calc(45% - 22px);
+        margin-right: 2px;
+        height: 80%;
+        width: 10%;
+    }
+
+    .card img {
+        padding: 8px;
+        width: 70%;
+        height: 62%;
+        border-radius: 20px;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+
+    .card h3 {
+        margin-top: 2px;
+        font-family: "Permanent Marker", cursive;
+        color: #fff;
+        font-size: 14px;
+    }
+    .play-button {
+        background-color: #A6C420;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        position: relative;
+        bottom: 80px;
+        left: 25px;
+    }
+    .music-info {
+        text-align: left;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    
+    .music-info i {
+        font-size: 24px;
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        top: 18px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Permanent+Marker&display=swap');
+    .music-info h2 {
+        font-size: 20px;
+        margin-top: 0;
+        display: inline-block;
+        position: relative;
+        top: 15px;
+        font-family: "Pacifico", cursive;
+    }    
+}
+/* CSS for mobile devices only */
+@media only screen and (max-width: 600px) {
+    .mobile-navbar {
+      position: fixed;
+      top: 4%; /* تحديد الوضع بالنسبة للأعلى */
+      left: 52%; /* تحديد الوضع بالنسبة لليسار */
+      transform: translate(-50%, -50%); /* لتحديد النصف العرضي والرأسي للناف بار */
+      width: 70%; /* تحديد عرض الناف بار بنسبة مئوية من عرض الشاشة */
+      height: 8.5%; /* تحديد ارتفاع الناف بار بنسبة مئوية من ارتفاع الشاشة */
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 20px; /* جعل حواف الناف بار دائرية */
+      z-index: 1000; /* تأكد من أن الناف بار تظهر فوق كل شيء آخر */
+      text-align: center; /* لتوسيط اللوجو */
+      overflow: hidden; /* لضمان عدم تجاوز الصورة حواف الناف بار */
+    }
+  
+    .mobile-navbar img {
+      max-width: 100%; /* تحديد عرض الصورة بحد أقصى لتجنب التشوه عندما تكون الشاشة صغيرة */
+      height: auto; /* السماح للارتفاع بالتعديل تلقائيًا وفقًا للعرض */
+      position: absolute; /* تحديد الصورة بوضعية مطلقة داخل الناف بار */
+      top: 32%; /* تحديد الوضع بالنسبة للأعلى */
+      left: 42%; /* تحديد الوضع بالنسبة لليسار */
+      transform: translate(-50%, -50%); /* تحديد النصف العرضي والرأسي للصورة */
+    }
+  }
