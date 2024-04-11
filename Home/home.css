@@ -360,9 +360,9 @@ body {
 
     .controls {
         position: absolute;
-        left: -75px;
+        left: -20%;
         font-size: 2px;
-        top: 20px;
+        top: 40%;
     }
 }
 
