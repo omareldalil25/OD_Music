@@ -14,7 +14,7 @@ const playSong = (index) => {
     const songName = songItem.querySelector('span').textContent;
     const songSrc = songItem.getAttribute('data-src');
     const songImg = songItem.getAttribute('data-img');
-    
+
     currentSongName.textContent = songName;
     currentSongImg.src = songImg;
     audioPlayer.src = songSrc;
@@ -22,18 +22,18 @@ const playSong = (index) => {
 };
 
 playlistItems.forEach((item, index) => {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function () {
         currentSongIndex = index;
         playSong(currentSongIndex);
     });
 });
 
-document.querySelector('.prev-btn').addEventListener('click', function() {
+document.querySelector('.prev-btn').addEventListener('click', function () {
     currentSongIndex = (currentSongIndex - 1 + playlistItems.length) % playlistItems.length;
     playSong(currentSongIndex);
 });
 
-document.querySelector('.next-btn').addEventListener('click', function() {
+document.querySelector('.next-btn').addEventListener('click', function () {
     currentSongIndex = (currentSongIndex + 1) % playlistItems.length;
     playSong(currentSongIndex);
 });
@@ -42,19 +42,19 @@ document.querySelector('.next-btn').addEventListener('click', function() {
 playSong(currentSongIndex);
 
 // إضافة وظيفة لشريط التقدم
-audioPlayer.addEventListener('timeupdate', function() {
+audioPlayer.addEventListener('timeupdate', function () {
     const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
     progressBar.style.width = `${progress}%`;
 });
 
 // إضافة وظيفة لشريط التحكم في الصوت
-audioPlayer.addEventListener('volumechange', function() {
+audioPlayer.addEventListener('volumechange', function () {
     const volume = (audioPlayer.volume) * 100;
     volumeBar.style.width = `${volume}%`;
 });
 
 // تحكم في شريط التقدم عند النقر
-progressBar.parentElement.addEventListener('click', function(event) {
+progressBar.parentElement.addEventListener('click', function (event) {
     const rect = progressBar.parentElement.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const width = progressBar.parentElement.offsetWidth;
@@ -63,7 +63,7 @@ progressBar.parentElement.addEventListener('click', function(event) {
 });
 
 // تحكم في شريط التحكم في الصوت عند النقر
-volumeBar.parentElement.addEventListener('click', function(event) {
+volumeBar.parentElement.addEventListener('click', function (event) {
     const rect = volumeBar.parentElement.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const width = volumeBar.parentElement.offsetWidth;
@@ -71,20 +71,30 @@ volumeBar.parentElement.addEventListener('click', function(event) {
     audioPlayer.volume = percentage;
 });
 
-// وظيفة زر Play/Pause
-document.querySelector('.play-pause-btn').addEventListener('click', function() {
+// Function for Play/Pause button
+const playPauseButton = document.querySelector('.play-pause-btn');
+const playPauseIcon = playPauseButton.querySelector('i');
+
+playPauseButton.addEventListener('click', function () {
     if (audioPlayer.paused) {
         audioPlayer.play();
+        playPauseIcon.classList.remove('fa-play');
+        playPauseIcon.classList.add('fa-pause');
     } else {
         audioPlayer.pause();
+        playPauseIcon.classList.remove('fa-pause');
+        playPauseIcon.classList.add('fa-play');
     }
 });
 
+
 // وظيفة زر Play Next
-document.querySelector('.play-next-btn').addEventListener('click', function() {
+document.querySelector('.play-next-btn').addEventListener('click', function () {
     currentSongIndex = (currentSongIndex + 1) % playlistItems.length;
     playSong(currentSongIndex);
 });
+
+
 
 // وظيفة لعرض رسالة عند النقر على زر المشاركة
 function shareSong() {
